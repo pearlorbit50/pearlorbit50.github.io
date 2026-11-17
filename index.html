@@ -1,0 +1,996 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>海角大神强上会喷水的亲姐姐-华语社区传闻与内容观察</title>
+<meta name="description" content="海角大神强上会喷水的亲姐姐是华语匿名社区里被反复引用的标题化说法，这篇页面把传闻、原文标题、平台账号记录与时间线拆开，讲清楚它从哪个板块流出、哪些细节经得起核对、哪些只是转述放大。">
+<meta name="keywords" content="海角大神强上会喷水的亲姐姐">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230e2233'/%3E%3Cpath d='M14 44 L28 18 L36 32 L44 22 L52 44 Z' fill='%23e8b04b'/%3E%3Ccircle cx='46' cy='16' r='5' fill='%23f4e3c1'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#101820;
+  --ink-2:#2c3a46;
+  --muted:#5d6f7d;
+  --paper:#f6f3ec;
+  --paper-2:#fffdf8;
+  --line:#ddd5c6;
+  --line-2:#c9bfab;
+  --brand:#0e2233;
+  --brand-2:#1b3a52;
+  --accent:#b5492f;
+  --accent-2:#e8b04b;
+  --teal:#2e6b62;
+  --r-s:6px;
+  --r-m:10px;
+  --r-l:16px;
+  --sh-s:0 1px 2px rgba(16,24,32,.08);
+  --sh-m:0 6px 20px rgba(16,24,32,.10);
+  --sp-1:6px; --sp-2:10px; --sp-3:16px; --sp-4:24px; --sp-5:36px; --sp-6:56px;
+  --f-sans:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  --f-serif:"Songti SC","Noto Serif SC",Georgia,serif;
+  --sticky-h:96px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--sticky-h)}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--f-sans);font-size:16px;line-height:1.8;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:var(--brand-2);text-decoration:none}
+a:hover{color:var(--accent)}
+:focus-visible{outline:3px solid var(--accent-2);outline-offset:2px;border-radius:3px}
+h1,h2,h3,h4{line-height:1.35;margin:0 0 var(--sp-2)}
+h2{font-size:1.5rem;letter-spacing:.01em}
+h3{font-size:1.13rem}
+p{margin:0 0 var(--sp-3)}
+ul,ol{margin:0 0 var(--sp-3);padding-left:1.25em}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+
+/* ---------- 吸顶公告条 + 页头 ---------- */
+.sticky-zone{position:sticky;top:0;z-index:60}
+.notice{
+  background:var(--brand);color:#f1e7d4;font-size:.82rem;
+  border-bottom:1px solid #2b4a63;
+}
+.notice .wrap{display:flex;gap:12px;align-items:center;flex-wrap:wrap;padding-top:7px;padding-bottom:7px}
+.notice-badge{
+  background:var(--accent-2);color:#221a08;font-weight:700;
+  padding:1px 8px;border-radius:100px;font-size:.74rem;letter-spacing:.05em;white-space:nowrap;
+}
+.notice time{color:#bcd0dd;font-variant-numeric:tabular-nums}
+.notice a{color:#fff;border-bottom:1px solid rgba(255,255,255,.4)}
+.site-header{background:rgba(255,253,248,.97);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);box-shadow:var(--sh-s)}
+.header-in{display:flex;align-items:center;gap:18px;padding-top:12px;padding-bottom:12px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--brand);font-size:1.02rem;letter-spacing:.02em;max-width:100%}
+.brand svg{flex:0 0 auto}
+.brand span{white-space:nowrap}
+.nav-toggle{
+  display:none;margin-left:auto;background:var(--paper-2);border:1px solid var(--line-2);
+  border-radius:var(--r-s);padding:7px 12px;font:inherit;font-size:.85rem;color:var(--brand);
+  cursor:pointer;
+}
+.main-nav{margin-left:auto;display:flex;gap:2px;flex-wrap:wrap}
+.main-nav a{
+  padding:6px 10px;border-radius:var(--r-s);font-size:.9rem;color:var(--ink-2);
+  transition:background .15s,color .15s;
+}
+.main-nav a:hover{background:#efe9db;color:var(--brand)}
+.header-tools{display:flex;gap:8px;align-items:center}
+.search-box{display:flex;gap:0;border:1px solid var(--line-2);border-radius:100px;overflow:hidden;background:var(--paper-2)}
+.search-box input{
+  border:0;background:transparent;padding:6px 12px;font:inherit;font-size:.85rem;width:150px;color:var(--ink);
+}
+.search-box input:focus{outline:none}
+.search-box button{
+  border:0;background:var(--brand);color:#fff;padding:6px 14px;font:inherit;font-size:.82rem;cursor:pointer;
+}
+.search-result{
+  display:none;font-size:.8rem;color:var(--accent);flex-basis:100%;padding-top:2px;
+}
+.search-result.on{display:block}
+
+/* ---------- 首屏 ---------- */
+.hero{
+  background:
+    radial-gradient(1000px 320px at 82% -40px,rgba(232,176,75,.30),transparent 65%),
+    linear-gradient(160deg,#0e2233 0%,#17374d 58%,#204960 100%);
+  color:#f3ece0;position:relative;overflow:hidden;
+}
+.hero::after{
+  content:"";position:absolute;inset:auto -60px -120px auto;width:420px;height:320px;
+  background:radial-gradient(circle at 40% 40%,rgba(181,73,47,.34),transparent 62%);
+  pointer-events:none;
+}
+.hero-in{position:relative;z-index:1;display:grid;grid-template-columns:1.15fr .85fr;gap:var(--sp-5);align-items:center;padding-top:var(--sp-6);padding-bottom:var(--sp-6)}
+.hero-kicker{
+  display:inline-flex;align-items:center;gap:8px;font-size:.78rem;letter-spacing:.16em;
+  color:var(--accent-2);text-transform:uppercase;margin-bottom:var(--sp-2);
+}
+.hero-kicker::before{content:"";width:26px;height:2px;background:var(--accent-2)}
+.hero h1{font-size:clamp(1.7rem,3.4vw,2.62rem);color:#fff;letter-spacing:.01em;margin-bottom:var(--sp-3)}
+.hero p.lead{font-family:var(--f-serif);font-size:1.02rem;color:#d5e0e7;max-width:36em;margin-bottom:var(--sp-4)}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:var(--sp-4)}
+.btn{
+  display:inline-block;padding:10px 20px;border-radius:100px;font-size:.9rem;font-weight:600;
+  border:1px solid transparent;transition:transform .15s,background .15s;
+}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:var(--accent-2);color:#221a08}
+.btn-ghost{border-color:rgba(243,236,224,.4);color:#f3ece0}
+.btn-ghost:hover{background:rgba(243,236,224,.1);color:#fff}
+.hero-stats{display:flex;gap:var(--sp-4);flex-wrap:wrap;list-style:none;padding:0;margin:0}
+.hero-stats li{min-width:96px}
+.hero-stats b{display:block;font-size:1.42rem;color:#fff;font-variant-numeric:tabular-nums;line-height:1.2}
+.hero-stats small{font-size:.76rem;color:#a9c0cd}
+.hero-art{position:relative;min-height:290px}
+.hero-art svg{width:100%;height:auto}
+.art-cap{
+  position:absolute;left:0;bottom:-6px;font-size:.74rem;color:#9db6c5;letter-spacing:.04em;
+}
+
+/* ---------- 主内容两栏 ---------- */
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:var(--sp-5);padding:var(--sp-5) 0 var(--sp-6)}
+.main-col{min-width:0}
+.side-col{min-width:0}
+section.block{margin-bottom:var(--sp-6);scroll-margin-top:var(--sticky-h)}
+.block-head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;border-bottom:2px solid var(--ink);padding-bottom:8px;margin-bottom:var(--sp-3)}
+.block-head h2{margin:0;font-size:1.28rem}
+.block-head .hint{font-size:.76rem;color:var(--muted);white-space:nowrap;font-variant-numeric:tabular-nums}
+.eyebrow{font-size:.74rem;letter-spacing:.16em;color:var(--accent);font-weight:700;margin-bottom:6px;display:block}
+
+/* 概览 */
+.overview-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-3)}
+.ov-card{background:var(--paper-2);border:1px solid var(--line);border-radius:var(--r-m);padding:var(--sp-3);box-shadow:var(--sh-s)}
+.ov-card h3{font-size:.98rem;margin-bottom:6px;color:var(--brand)}
+.ov-card p{font-size:.86rem;color:var(--ink-2);margin:0}
+.ov-num{font-family:var(--f-serif);font-size:1.5rem;color:var(--accent);font-weight:700;line-height:1}
+
+/* 精选推荐 */
+.feat-list{display:grid;gap:var(--sp-3)}
+.feat{display:grid;grid-template-columns:104px minmax(0,1fr);gap:var(--sp-3);background:var(--paper-2);border:1px solid var(--line);border-radius:var(--r-m);overflow:hidden;transition:box-shadow .15s,transform .15s}
+.feat:hover{box-shadow:var(--sh-m);transform:translateY(-2px)}
+.feat img{width:100%;height:100%;min-height:92px;object-fit:cover}
+.feat-body{padding:12px 14px 12px 0;min-width:0}
+.feat-body h3{font-size:1rem;margin-bottom:4px}
+.feat-body p{font-size:.84rem;color:var(--muted);margin:0}
+.tagline{display:inline-block;font-size:.72rem;color:var(--teal);background:#e4efec;border-radius:100px;padding:1px 9px;margin-top:6px}
+
+/* 最新更新：时间线 */
+.timeline{list-style:none;padding:0;margin:0;position:relative}
+.timeline::before{content:"";position:absolute;left:8px;top:6px;bottom:6px;width:2px;background:var(--line-2)}
+.timeline li{position:relative;padding:0 0 var(--sp-3) 30px}
+.timeline li::before{content:"";position:absolute;left:2px;top:8px;width:12px;height:12px;border-radius:50%;background:var(--paper);border:2px solid var(--accent)}
+.timeline time{display:block;font-size:.76rem;color:var(--muted);font-variant-numeric:tabular-nums;letter-spacing:.03em}
+.timeline strong{display:block;font-size:.94rem;color:var(--brand);margin:2px 0}
+.timeline p{font-size:.85rem;color:var(--ink-2);margin:0}
+
+/* 分类索引 */
+.cat-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;list-style:none;padding:0;margin:0}
+.cat-grid a{
+  display:flex;justify-content:space-between;align-items:center;gap:10px;
+  background:var(--paper-2);border:1px solid var(--line);border-radius:var(--r-s);
+  padding:10px 14px;font-size:.9rem;color:var(--ink);transition:border-color .15s,background .15s;
+}
+.cat-grid a:hover{border-color:var(--accent);background:#fff}
+.cat-grid .count{font-size:.74rem;color:var(--muted);font-variant-numeric:tabular-nums}
+
+/* 深度解析 */
+.analysis{background:var(--paper-2);border:1px solid var(--line);border-left:5px solid var(--accent);border-radius:var(--r-m);padding:var(--sp-4)}
+.analysis h3{font-size:1.05rem;color:var(--branch,#0e2233);margin-top:var(--sp-4);padding-left:10px;border-left:3px solid var(--accent-2)}
+.analysis h3:first-of-type{margin-top:0}
+.analysis p{font-size:.94rem;color:var(--ink-2)}
+.pull{
+  font-family:var(--f-serif);font-size:1.06rem;color:var(--brand);background:#f0ead9;
+  border-radius:var(--r-m);padding:var(--sp-3) var(--sp-3);margin:var(--sp-3) 0;
+  border-left:4px solid var(--accent-2);
+}
+.check-table{width:100%;border-collapse:collapse;font-size:.85rem;margin:var(--sp-3) 0}
+.check-table th,.check-table td{border:1px solid var(--line-2);padding:8px 10px;text-align:left;vertical-align:top}
+.check-table th{background:#eee6d4;font-weight:700;color:var(--brand)}
+.check-table td:first-child{white-space:nowrap;color:var(--muted);font-size:.8rem}
+
+/* 体验指南：编号步骤 */
+.steps{counter-reset:st;list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.steps li{
+  counter-increment:st;position:relative;padding:12px 16px 12px 54px;
+  background:var(--paper-2);border:1px solid var(--line);border-radius:var(--r-m);
+  font-size:.9rem;color:var(--ink-2);
+}
+.steps li::before{
+  content:counter(st,decimal-leading-zero);position:absolute;left:14px;top:11px;
+  font-family:var(--f-serif);font-size:1.06rem;color:var(--accent);font-weight:700;
+}
+.steps b{color:var(--brand)}
+
+/* FAQ */
+.faq details{background:var(--paper-2);border:1px solid var(--line);border-radius:var(--r-m);margin-bottom:10px;overflow:hidden}
+.faq summary{
+  cursor:pointer;padding:12px 42px 12px 16px;font-weight:600;font-size:.92rem;position:relative;
+  list-style:none;color:var(--brand);
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{
+  content:"+";position:absolute;right:16px;top:50%;transform:translateY(-50%);
+  font-size:1.2rem;color:var(--accent);line-height:1;
+}
+.faq details[open] summary::after{content:"–"}
+.faq details > div{padding:0 16px 14px;font-size:.88rem;color:var(--ink-2)}
+
+/* 评论 */
+.comments{display:grid;gap:12px}
+.comment{background:var(--paper-2);border:1px solid var(--line);border-radius:var(--r-m);padding:12px 16px}
+.comment-meta{display:flex;align-items:center;gap:8px;font-size:.76rem;color:var(--muted);margin-bottom:4px;flex-wrap:wrap}
+.avatar{width:22px;height:22px;border-radius:50%;background:var(--brand-2);color:#fff;display:grid;place-items:center;font-size:.68rem}
+.comment p{font-size:.88rem;margin:0;color:var(--ink-2)}
+.comment.tone-cool{border-left:3px solid var(--muted)}
+.comment.tone-hot{border-left:3px solid var(--accent)}
+.comment.tone-neutral{border-left:3px solid var(--teal)}
+
+/* 资讯紧凑列表 */
+.news-list{list-style:none;padding:0;margin:0;border-top:1px solid var(--line)}
+.news-list li{display:grid;grid-template-columns:84px minmax(0,1fr);gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}
+.news-list time{font-size:.76rem;color:var(--muted);font-variant-numeric:tabular-nums;padding-top:2px}
+.news-list a{font-size:.9rem;font-weight:600}
+.news-list span{display:block;font-size:.8rem;color:var(--muted);margin-top:2px}
+
+/* 标签索引 */
+.tag-cloud{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0}
+.tag-cloud a{
+  font-size:.82rem;background:#eee6d4;color:var(--brand-2);border-radius:100px;padding:4px 13px;
+  border:1px solid transparent;transition:background .15s,border-color .15s;
+}
+.tag-cloud a:hover{background:#fff;border-color:var(--accent)}
+
+/* 榜单 */
+.rank{list-style:none;padding:0;margin:0;counter-reset:rk}
+.rank li{
+  counter-increment:rk;display:grid;grid-template-columns:34px minmax(0,1fr) auto;gap:10px;
+  align-items:baseline;padding:9px 0;border-bottom:1px dashed var(--line-2);font-size:.9rem;
+}
+.rank li::before{content:counter(rk);font-family:var(--f-serif);color:var(--accent);font-weight:700;font-size:1.02rem}
+.rank em{font-style:normal;font-size:.76rem;color:var(--muted);white-space:nowrap}
+
+/* 侧栏 */
+.side-card{background:var(--paper-2);border:1px solid var(--line);border-radius:var(--r-m);padding:var(--sp-3);box-shadow:var(--sh-s);margin-bottom:var(--sp-3)}
+.side-card h2{font-size:.94rem;letter-spacing:.05em;margin-bottom:10px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+.side-nav{list-style:none;padding:0;margin:0}
+.side-nav a{display:block;padding:6px 10px;border-radius:var(--r-s);font-size:.85rem;color:var(--ink-2);border-left:2px solid transparent}
+.side-nav a:hover{background:#f0ead9}
+.side-nav a.active{background:#eee6d4;color:var(--brand);border-left-color:var(--accent);font-weight:600}
+.side-list{list-style:none;padding:0;margin:0}
+.side-list li{padding:7px 0;border-bottom:1px solid #eee7d9;font-size:.85rem}
+.side-list li:last-child{border-bottom:0}
+.side-list small{display:block;color:var(--muted);font-size:.74rem}
+.side-static{position:sticky;top:calc(var(--sticky-h) + 12px)}
+
+/* 页脚 */
+.site-footer{background:var(--brand);color:#c9d8e2;padding:var(--sp-5) 0 var(--sp-3);font-size:.86rem}
+.footer-top{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:var(--sp-4);padding-bottom:var(--sp-4);border-bottom:1px solid #2b4a63}
+.site-footer .brand{color:#fff;font-size:.98rem;margin-bottom:10px}
+.site-footer .pos{font-family:var(--f-serif);color:#e9dfcb;max-width:30em}
+.footer-col h3{font-size:.86rem;color:var(--accent-2);letter-spacing:.08em;margin-bottom:10px}
+.footer-col ul{list-style:none;padding:0;margin:0;display:grid;gap:6px}
+.footer-col a{color:#c9d8e2;font-size:.84rem}
+.footer-col a:hover{color:#fff}
+.footer-bottom{padding-top:var(--sp-3);display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;font-size:.76rem;color:#8da6b6}
+.footer-bottom time{font-variant-numeric:tabular-nums}
+
+/* 回到顶部 */
+#toTop{
+  position:fixed;right:18px;bottom:20px;z-index:70;width:44px;height:44px;border-radius:50%;
+  border:1px solid var(--line-2);background:var(--paper-2);color:var(--brand);font:inherit;
+  font-size:.8rem;cursor:pointer;box-shadow:var(--sh-m);opacity:0;visibility:hidden;
+  transform:translateY(8px);transition:opacity .2s,transform .2s,visibility .2s;
+}
+#toTop.on{opacity:1;visibility:visible;transform:translateY(0)}
+
+/* 平板 */
+@media (max-width:980px){
+  .hero-in{grid-template-columns:1fr;padding-top:var(--sp-5);padding-bottom:var(--sp-5)}
+  .hero-art{min-height:180px;max-width:420px}
+  .layout{grid-template-columns:1fr}
+  .side-col{order:2}
+  .main-col{order:1}
+  .overview-grid{grid-template-columns:repeat(2,1fr)}
+  .footer-top{grid-template-columns:1fr 1fr}
+  .side-static{position:static}
+}
+@media (max-width:720px){
+  .nav-toggle{display:block}
+  .main-nav{
+    display:none;flex-basis:100%;flex-direction:column;margin-left:0;
+    border-top:1px solid var(--line);padding-top:8px;
+  }
+  .main-nav.open{display:flex}
+  .main-nav a{padding:9px 8px}
+  .header-tools{flex-basis:100%;margin-left:0}
+  .search-box{width:100%}
+  .search-box input{width:100%;flex:1}
+  .overview-grid{grid-template-columns:1fr}
+  .cat-grid{grid-template-columns:1fr}
+  .feat{grid-template-columns:84px minmax(0,1fr)}
+  .footer-top{grid-template-columns:1fr}
+  :root{--sticky-h:132px}
+}
+@media (max-width:400px){
+  .wrap{padding:0 14px}
+  .hero-stats{gap:18px}
+  .notice .wrap{font-size:.78rem}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none !important;animation:none !important}
+  .btn:hover,.feat:hover{transform:none}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+<div class="sticky-zone">
+  <div class="notice">
+    <div class="wrap">
+      <span class="notice-badge">更新</span>
+      <span>海角社区标题区 11 月 6 日晚调整“姐弟”标签排序，<a href="/#latest">新条目页与旧缓存差异</a>已记录</span>
+      <time datetime="2026-11-07">2026-11-07 09:40</time>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="wrap header-in">
+      <a class="brand" href="/#top" aria-label="返回首页顶部">
+        <svg width="30" height="30" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <rect width="64" height="64" rx="14" fill="#0e2233"/>
+          <path d="M13 45 L27 17 L36 33 L44 21 L53 45 Z" fill="#e8b04b"/>
+          <circle cx="47" cy="15" r="5" fill="#f4e3c1"/>
+        </svg>
+        <span>海角大神强上会喷水的亲姐姐</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="mainNav">栏目菜单</button>
+      <nav class="main-nav" id="mainNav" aria-label="主题导航">
+        <a href="/#overview">概览</a>
+        <a href="/#picks">精选</a>
+        <a href="/#latest">最新</a>
+        <a href="/#channels">频道</a>
+        <a href="/#analysis">深度解析</a>
+        <a href="/#guide">体验指南</a>
+        <a href="/#faq">问答</a>
+        <a href="/#comments">评论</a>
+        <a href="/#rank">排行</a>
+      </nav>
+      <div class="header-tools">
+        <div class="search-box" role="search">
+          <label for="siteSearch" class="sr-only" style="position:absolute;left:-9999px">搜索频道或条目</label>
+          <input id="siteSearch" type="search" placeholder="搜频道 / 条目 / 账号" autocomplete="off">
+          <button id="searchBtn" type="button">查找</button>
+        </div>
+        <p class="search-result" id="searchResult" role="status" aria-live="polite"></p>
+      </div>
+    </div>
+  </header>
+</div>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-in">
+      <div>
+        <span class="hero-kicker">匿名社区标题观察 · 11 月版</span>
+        <h1>海角大神强上会喷水的亲姐姐</h1>
+        <p class="lead">一串被反复转贴的标题，背后是账号改名、板块搬运、标题党排序三件事叠在一起。这里按原帖标题、发布时间、账号名拆开摆，能核对的给日期，核不了的直说。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="/#latest">看最新更新</a>
+          <a class="btn btn-ghost" href="/#analysis">读深度解析</a>
+        </div>
+        <ul class="hero-stats">
+          <li><b>11</b><small>个独立观察板块</small></li>
+          <li><b>9</b><small>个可检索频道</small></li>
+          <li><b>3</b><small>条已核对的时间点</small></li>
+          <li><b>2026-11-07</b><small>数据截点</small></li>
+        </ul>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 340 300" role="presentation">
+          <defs>
+            <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#2b5e78"/><stop offset="1" stop-color="#0e2233"/>
+            </linearGradient>
+          </defs>
+          <rect x="8" y="24" width="240" height="150" rx="12" fill="url(#g1)" stroke="#3f7392"/>
+          <rect x="22" y="42" width="120" height="9" rx="4" fill="#e8b04b"/>
+          <rect x="22" y="60" width="196" height="7" rx="3" fill="#7fa2b7"/>
+          <rect x="22" y="74" width="172" height="7" rx="3" fill="#5d8299"/>
+          <rect x="22" y="88" width="200" height="7" rx="3" fill="#5d8299"/>
+          <rect x="22" y="112" width="86" height="26" rx="13" fill="#b5492f"/>
+          <rect x="118" y="112" width="86" height="26" rx="13" fill="#274a60"/>
+          <rect x="112" y="196" width="212" height="84" rx="12" fill="#f6f3ec" stroke="#c9bfab"/>
+          <circle cx="138" cy="222" r="10" fill="#b5492f"/>
+          <rect x="156" y="216" width="120" height="7" rx="3" fill="#0e2233"/>
+          <rect x="156" y="230" width="92" height="6" rx="3" fill="#9aa7b0"/>
+          <rect x="128" y="248" width="176" height="6" rx="3" fill="#c9bfab"/>
+          <rect x="128" y="261" width="132" height="6" rx="3" fill="#c9bfab"/>
+          <path d="M262 40 l38 20 -20 8 12 30 -16 6 -12 -28 -22 14 z" fill="#e8b04b" opacity=".92"/>
+        </svg>
+        <span class="art-cap">标题卡·账号卡·时间戳，三层对照</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap layout">
+    <div class="main-col">
+
+      <!-- 领域概览 -->
+      <section class="block" id="overview">
+        <div class="block-head">
+          <h2>传闻的结构：三个可核对的对象</h2>
+          <span class="hint">时间线 · 账号 · 标题</span>
+        </div>
+        <span class="eyebrow">领域概览</span>
+        <p>这类标题真正能落地的只有三样东西：发布时间的先后、发布账号的改名记录、标题本身在板块入口里的排序位置。至于标题描述的剧情，没有一处在原帖里留下完整的不在场证明或第三方见证。把三层拆开，能核对的部分和不能核对的部分比例大概是一比五。</p>
+        <div class="overview-grid">
+          <div class="ov-card">
+            <div class="ov-num">03</div>
+            <h3>时间点有截图</h3>
+            <p>10 月 18 日原帖、10 月 29 日改名、11 月 6 日排序调整，三处截图时间戳到分钟，其余环节仅存文字转述。</p>
+          </div>
+          <div class="ov-card">
+            <div class="ov-num">17</div>
+            <h3>转述的二手版本</h3>
+            <p>至少 17 个不同标题变体，删改关键词的顺序不同；同一账号参与转述的次数最多为 4 次，其余为单次搬运。</p>
+          </div>
+          <div class="ov-card">
+            <div class="ov-num">9</div>
+            <h3>可检索频道</h3>
+            <p>热门榜、新帖区、姐姐主题、匿名爆料、图文鉴赏、账号沿革、标题考古、评论精选、社区规则，各频道口径不同。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 精选推荐 -->
+      <section class="block" id="picks">
+        <div class="block-head">
+          <h2>精选内容推荐：五条值得先看的材料</h2>
+          <span class="hint">按证据密度排序</span>
+        </div>
+        <span class="eyebrow">精选阅读</span>
+        <div class="feat-list">
+          <a class="feat" href="/#analysis">
+            <img src="https://picsum.photos/seed/hj-titlecard/208/184" width="208" height="184" loading="lazy" alt="标题截图对照卡片，两块深色标题栏并列">
+            <div class="feat-body">
+              <h3>原帖标题与转述标题的逐字对照</h3>
+              <p>10 月 18 日标题中的“强上”是第三个词，转述版挪到第二个词；顺序变化后句意重心明显偏移。</p>
+              <span class="tagline">逐字比对</span>
+            </div>
+          </a>
+          <a class="feat" href="/#latest">
+            <img src="https://picsum.photos/seed/hj-rename29/208/184" width="208" height="184" loading="lazy" alt="账号改名记录页截图，显示旧昵称与新昵称两栏">
+            <div class="feat-body">
+              <h3>账号“夜航船”10 月 29 日改名记录</h3>
+              <p>旧昵称、新昵称、改名前后的发帖数量都能看到；改名后两天内连发 3 条同题材标题。</p>
+              <span class="tagline">账号沿革</span>
+            </div>
+          </a>
+          <a class="feat" href="/#channels">
+            <img src="https://picsum.photos/seed/hj-boardgrid/208/184" width="208" height="184" loading="lazy" alt="社区板块入口网格，多个频道名称依次排列">
+            <div class="feat-body">
+              <h3>板块入口排序：姐姐主题为何排第三</h3>
+              <p>依据是 11 月 6 日调整后的入口位置，与新增帖子数量不完全对应，热度权重被下调说明在社区规则里。</p>
+              <span class="tagline">频道结构</span>
+            </div>
+          </a>
+          <a class="feat" href="/#guide">
+            <img src="https://picsum.photos/seed/hj-guidebook/208/184" width="208" height="184" loading="lazy" alt="社区浏览指南页面，步骤编号与侧边目录">
+            <div class="feat-body">
+              <h3>五步看懂一条匿名社区传闻</h3>
+              <p>从锁定原帖编号、看发布时间、查账号改名，到区分转述与推测，每一步都给出可操作的查看位置。</p>
+              <span class="tagline">体验指南</span>
+            </div>
+          </a>
+          <a class="feat" href="/#faq">
+            <img src="https://picsum.photos/seed/hj-faqcard/208/184" width="208" height="184" loading="lazy" alt="问答折叠面板，多个问题依次展开">
+            <div class="feat-body">
+              <h3>常见疑问：标题里的“亲姐姐”从哪来</h3>
+              <p>对照 10 月 18 日原帖与 10 月 22 日转述，前者无亲属称呼，后者补上了“亲姐姐”三字。</p>
+              <span class="tagline">提问要点</span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- 最新更新 -->
+      <section class="block" id="latest">
+        <div class="block-head">
+          <h2>最新更新：七条逐日记录</h2>
+          <span class="hint">截至 2026-11-07</span>
+        </div>
+        <span class="eyebrow">动态</span>
+        <ol class="timeline">
+          <li>
+            <time datetime="2026-11-07">2026-11-07 08:12</time>
+            <strong>热门榜第 4 位标题被替换</strong>
+            <p>旧标题含“亲姐姐”，新标题改为“姐姐”，同一帖子编号未变，评论区有两条追问改动原因。</p>
+          </li>
+          <li>
+            <time datetime="2026-11-06">2026-11-06 21:36</time>
+            <strong>姐姐主题入口从第 2 位移到第 3 位</strong>
+            <p>调整后图文鉴赏频道前移；社区规则页写明热度权重按 7 日新增帖子计算，未提人工干预。</p>
+          </li>
+          <li>
+            <time datetime="2026-11-04">2026-11-04 14:05</time>
+            <strong>账号“夜航船”停更 4 天后发一条说明</strong>
+            <p>说明只有 62 字，称标题为“搬运时改写”，未说明改写者是谁，也未提原帖作者。</p>
+          </li>
+          <li>
+            <time datetime="2026-11-01">2026-11-01 19:48</time>
+            <strong>标题考古频道出现时间轴整理帖</strong>
+            <p>把 10 月 18 日到 11 月 1 日的 17 个标题变体按出现顺序排列，其中 9 个标注了搬运转发渠道。</p>
+          </li>
+          <li>
+            <time datetime="2026-10-29">2026-10-29 10:27</time>
+            <strong>账号改名：旧昵称改为“夜航船”</strong>
+            <p>改名后主页简介为空，历史发帖可追溯到 9 月 12 日，此前共 41 条，题材以短标题为主。</p>
+          </li>
+          <li>
+            <time datetime="2026-10-22">2026-10-22 23:19</time>
+            <strong>首个带“亲姐姐”字样的转述帖出现</strong>
+            <p>与 10 月 18 日原帖相隔 4 天，标题长度从 14 字增到 21 字，正文只有一句“转自热门”。</p>
+          </li>
+          <li>
+            <time datetime="2026-10-18">2026-10-18 21:03</time>
+            <strong>原帖发布，标题 14 字</strong>
+            <p>发布板块为匿名爆料，正文 3 段，无图片；发布后 40 分钟内评论 12 条，其中 3 条质疑标题措辞。</p>
+          </li>
+        </ol>
+      </section>
+
+      <!-- 分类入口 -->
+      <section class="block" id="channels">
+        <div class="block-head">
+          <h2>分类入口：九个频道的检索口径</h2>
+          <span class="hint">点击进入对应板块</span>
+        </div>
+        <span class="eyebrow">频道索引</span>
+        <ul class="cat-grid">
+          <li><a href="/#rank"><span>热门榜</span><span class="count">24 条</span></a></li>
+          <li><a href="/#latest"><span>新帖区</span><span class="count">31 条</span></a></li>
+          <li><a href="/#picks"><span>姐姐主题</span><span class="count">18 条</span></a></li>
+          <li><a href="/#analysis"><span>匿名爆料</span><span class="count">46 条</span></a></li>
+          <li><a href="/#guide"><span>图文鉴赏</span><span class="count">22 条</span></a></li>
+          <li><a href="/#comments"><span>账号沿革</span><span class="count">9 条</span></a></li>
+          <li><a href="/#overview"><span>标题考古</span><span class="count">14 条</span></a></li>
+          <li><a href="/#faq"><span>评论精选</span><span class="count">27 条</span></a></li>
+          <li><a href="/#supply"><span>社区规则</span><span class="count">6 条</span></a></li>
+        </ul>
+      </section>
+
+      <!-- 深度解析 -->
+      <section class="block" id="analysis">
+        <div class="block-head">
+          <h2>深度解析：这个标题为什么越传越长</h2>
+          <span class="hint">主体阅读区</span>
+        </div>
+        <span class="eyebrow">长文 · 可核对</span>
+        <article class="analysis">
+          <p class="pull">可以先给出判断：这段标题的传播力来自三次改写，而非一次原始描述。第一次是中性叙述被压缩成动词前置，第二次是补入亲属称谓，第三次是把“会喷水”挪到句尾做悬念。每次改写都在缩短信息、拉长情绪，核对难度随之上升。</p>
+
+          <h3>10 月 18 日到 11 月 7 日：三个时间点撑着整条线</h3>
+          <p>原帖在 2026-10-18 21:03 发布，正文三段，开头写明“听人转述”，没有第一人称目击。10 月 22 日 23:19 的转述帖把标题扩到 21 字，并加上“亲姐姐”。10 月 29 日 10:27，发布账号由旧昵称改为“夜航船”。这三处都有可截图的页面状态，日期到分钟，属于能核对的部分。</p>
+          <p>与之相对，标题里涉及的场景没有任何一方给出可对应的地点、时间或第三方记录。所谓“大神”也不是社区认证身份，没有加 V 标记，仅凭单帖的点击量被转述者加上说法。把“大神”当事实会误读，把它当转述者的修辞更接近实际。</p>
+
+          <h3>标题长度对照：14 字、21 字、26 字</h3>
+          <table class="check-table">
+            <caption style="text-align:left;font-size:.78rem;color:var(--muted);padding-bottom:6px">三个版本标题结构与可核对字段</caption>
+            <thead>
+              <tr><th scope="col">版本</th><th scope="col">标题核心词序</th><th scope="col">与前一版差异</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>10-18 原帖</td><td>14 字，无亲属称谓，末尾为行为描述</td><td>基准版本，正文注明转述</td></tr>
+              <tr><td>10-22 转述</td><td>21 字，补入“亲姐姐”，动词前移</td><td>增加 7 字，发布者不同账号</td></tr>
+              <tr><td>11-01 搬运</td><td>26 字，加前缀修饰与句尾悬念</td><td>增加 5 字，标题考古频道记录</td></tr>
+            </tbody>
+          </table>
+          <p>标题从 14 字到 26 字，信息量没有增加，能查证的对象反而更少。转述版本删掉了原帖开头“听人转述”这是最要命的一处删改，因为那是唯一能提示信息源头的句子。搬运版再加前缀，读者拿到的第一印象就固定成了“已发生的事实”。</p>
+
+          <h3>账号改名与排序：11 月 6 日的入口变化</h3>
+          <p>11-06 21:36，姐姐主题入口从第 2 位退到第 3 位，图文鉴赏前移。社区规则页写的权重是 7 日新增帖子数，按 10-31 到 11-06 的统计，姐姐主题新增 18 条，图文鉴赏新增 22 条，排位变化与规则口径一致。这个细节常被解释成“被压热度”，但从现有页面看，解释成按规则排序更站得住。</p>
+          <p>账号方面，“夜航船”在 11-04 14:05 发过一条 62 字说明，称标题为“搬运时改写”。句子很短，没有点名改写着，也没有回应原帖作者是否知情。这属于回应，但也只回应了改写这一层，没触及标题所描述的内容本身。</p>
+
+          <h3>哪些是事实，哪些只是转述</h3>
+          <ul>
+            <li><b>事实层：</b>原帖发布时间、账号改名日期、入口排序调整时间，均有页面截图与日期。</li>
+            <li><b>回应层：</b>“夜航船”的 62 字说明承认搬运与改写，未承认内容真实性。</li>
+            <li><b>转述层：</b>“亲姐姐”“会喷水”等表述仅出现在二手标题，未出现在原帖正文。</li>
+            <li><b>推测层：</b>转述动机、排序是否针对某标题，均无直接材料，只能列为待核。</li>
+          </ul>
+          <p>把四层混在一起，讨论就会在情绪上打转。分开之后能得出一个较硬的判断：这条标题的传播链条中，可核对的部分集中在时间与账号，内容部分目前只有转述。谁想推翻这个判断，只需要拿出 10-18 之前的原始叙述或独立目击材料，即可。</p>
+        </article>
+      </section>
+
+      <!-- 体验指南 -->
+      <section class="block" id="guide">
+        <div class="block-head">
+          <h2>体验指南：五步核一条社区标题</h2>
+          <span class="hint">可操作步骤</span>
+        </div>
+        <span class="eyebrow">指南</span>
+        <ol class="steps">
+          <li><b>先锁定帖子编号。</b>编号在标题下方灰色小字，转述帖往往只贴标题不贴编号，缺编号的版本先降一级参考价值。</li>
+          <li><b>看发布时间与首条评论的时间差。</b>10-18 原帖 40 分钟内出现 12 条评论，3 条质疑措辞，这类早期评论比后来的转述更接近原始语境。</li>
+          <li><b>查发布账号的改名记录。</b>主页时间轴上的昵称变动会留下日期，改名前后题材是否突变，是判断账号性质的关键。</li>
+          <li><b>把标题拆成动词、对象、修饰三段。</b>逐段比对原帖与转述，哪一段是新加的，哪一段被删，比争辩真伪更快。</li>
+          <li><b>区分四层信息：事实、回应、转述、推测。</b>只有前两层能进结论，后两层留作背景，不做证据。</li>
+        </ol>
+      </section>
+
+      <!-- FAQ -->
+      <section class="block" id="faq">
+        <div class="block-head">
+          <h2>问答：关于这条标题的常见疑问</h2>
+          <span class="hint">折叠查看答案</span>
+        </div>
+        <span class="eyebrow">FAQ</span>
+        <div class="faq">
+          <details>
+            <summary>标题里的“亲姐姐”最早出现在哪一天？</summary>
+            <div>可查的最早记录是 2026-10-22 23:19 的一条转述帖，标题较 10-18 原帖多出 7 字。原帖正文没有亲属称谓，也没有第一人称叙述，只有“听人转述”四个字。</div>
+          </details>
+          <details>
+            <summary>“夜航船”这个账号是什么时候改名的？</summary>
+            <div>改名记录显示在 2026-10-29 10:27，旧昵称在该账号主页时间轴上仍可追溯，改名前累计 41 条发帖，题材以短标题为主，改名后主页简介被清空。</div>
+          </details>
+          <details>
+            <summary>姐姐主题板块为什么在 11 月 6 日往后排了一位？</summary>
+            <div>社区规则页给出的权重口径是 7 日新增帖子数。10-31 到 11-06 期间，姐姐主题新增 18 条，图文鉴赏新增 22 条，排位顺序与之吻合，页面未出现人工置顶标记。</div>
+          </details>
+          <details>
+            <summary>标题描述的剧情有第三方材料吗？</summary>
+            <div>目前没有。可核对的对象只有发布时间、账号改名、入口排序三组，剧情相关的表述都停留在转述层。把这三组当成全部证据，判断会更稳。</div>
+          </details>
+          <details>
+            <summary>原帖后来被删了吗？</summary>
+            <div>原帖编号仍能打开，正文与 10-18 当日截图一致，未出现修改痕迹。评论区共 168 条，早期 12 条保留完整，后段有 20 余条被折叠，折叠原因未单独公示。</div>
+          </details>
+        </div>
+      </section>
+
+      <!-- 用户评论 -->
+      <section class="block" id="comments">
+        <div class="block-head">
+          <h2>用户评论：六种不同立场的留言</h2>
+          <span class="hint">含吐槽与中性意见</span>
+        </div>
+        <span class="eyebrow">评论区</span>
+        <div class="comments">
+          <div class="comment tone-hot">
+            <div class="comment-meta"><span class="avatar">阿</span><span>阿砚</span><time datetime="2026-11-06">11-06 22:10</time></div>
+            <p>改名这个点最有意思。旧昵称下 41 条帖子标题都短，改名后连发三条长标题，题材也没变，很难说不是冲着热度去的。</p>
+          </div>
+          <div class="comment tone-neutral">
+            <div class="comment-meta"><span class="avatar">洛</span><span>洛水边</span><time datetime="2026-11-05">11-05 09:33</time></div>
+            <p>排序那事我算过，姐姐主题 18 条对图文鉴赏 22 条，退一位是正常的。被说成“压热度”有点过，规则页写得清楚。</p>
+          </div>
+          <div class="comment tone-cool">
+            <div class="comment-meta"><span class="avatar">沉</span><span>沉默的尺</span><time datetime="2026-11-04">11-04 15:51</time></div>
+            <p>10-18 原帖我当天看过，开头确实写了“听人转述”。后来那些标题把这句删了，再看就完全不是一个意思。</p>
+          </div>
+          <div class="comment tone-hot">
+            <div class="comment-meta"><span class="avatar">南</span><span>南桥旧事</span><time datetime="2026-11-03">11-03 20:02</time></div>
+            <p>26 字那个版本最夸张，前面加了一串修饰，句尾还留悬念。信息一点没多，翻半天还是回到 10-18 那条 14 字的帖。</p>
+          </div>
+          <div class="comment tone-neutral">
+            <div class="comment-meta"><span class="avatar">无</span><span>无名的观众</span><time datetime="2026-11-02">11-02 11:47</time></div>
+            <p>别的不说，标题考古频道排的那个时间轴挺好用，17 个变体按天排开，哪条是搬运一看就清楚。</p>
+          </div>
+          <div class="comment tone-cool">
+            <div class="comment-meta"><span class="avatar">老</span><span>老周不喝茶</span><time datetime="2026-11-01">11-01 23:15</time></div>
+            <p>62 字说明写得太省，只说搬运时改写，谁改的、改之前有没有打招呼都没提。承认了一半，另一半留着让人猜。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 相关资讯 -->
+      <section class="block" id="news">
+        <div class="block-head">
+          <h2>相关资讯：同题材的五条动态</h2>
+          <span class="hint">条目摘要不复述标题</span>
+        </div>
+        <span class="eyebrow">资讯</span>
+        <ul class="news-list">
+          <li>
+            <time datetime="2026-11-07">11-07</time>
+            <div><a href="/#latest">热门榜第 4 位标题去掉“亲”字</a><span>帖子编号未变，评论区两条追问改动原因，管理方未发公告。</span></div>
+          </li>
+          <li>
+            <time datetime="2026-11-06">11-06</time>
+            <div><a href="/#channels">姐姐主题入口退至第 3 位</a><span>7 日新增 18 条对 22 条，与规则页权重口径一致。</span></div>
+          </li>
+          <li>
+            <time datetime="2026-11-04">11-04</time>
+            <div><a href="/#comments">“夜航船”发布 62 字说明</a><span>承认搬运时改写，未点名改写着身份，也未回应内容真实性。</span></div>
+          </li>
+          <li>
+            <time datetime="2026-11-01">11-01</time>
+            <div><a href="/#analysis">标题考古频道整理 17 个变体</a><span>9 个标注搬运转发渠道，其余未注明来源。</span></div>
+          </li>
+          <li>
+            <time datetime="2026-10-29">10-29</time>
+            <div><a href="/#guide">账号改名记录可追溯至 9 月 12 日</a><span>改名后主页简介清空，发帖频率不降反升。</span></div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 相关推荐标签 -->
+      <section class="block" id="tags">
+        <div class="block-head">
+          <h2>相关推荐：按检索词找材料</h2>
+          <span class="hint">标签索引</span>
+        </div>
+        <span class="eyebrow">标签</span>
+        <ul class="tag-cloud">
+          <li><a href="/#latest">姐姐主题板块排序</a></li>
+          <li><a href="/#analysis">匿名社区标题改写</a></li>
+          <li><a href="/#comments">账号改名记录核对</a></li>
+          <li><a href="/#guide">传闻四层信息拆解</a></li>
+          <li><a href="/#picks">原帖与转述逐字比对</a></li>
+          <li><a href="/#faq">热门榜标题替换</a></li>
+          <li><a href="/#rank">标题考古时间轴</a></li>
+          <li><a href="/#overview">社区热度权重规则</a></li>
+        </ul>
+      </section>
+
+      <!-- 补充板块：榜单 -->
+      <section class="block" id="rank">
+        <div class="block-head">
+          <h2>本周榜单：标题变体传播次数</h2>
+          <span class="hint">10-31 至 11-06</span>
+        </div>
+        <span class="eyebrow">榜单</span>
+        <ol class="rank">
+          <li><span>26 字悬念版（句尾留钩子）</span><em>31 次转发</em></li>
+          <li><span>21 字亲属称谓版（10-22 起）</span><em>26 次转发</em></li>
+          <li><span>14 字原帖版（10-18）</span><em>14 次引用</em></li>
+          <li><span>带“图文鉴赏”前缀版</span><em>9 次转发</em></li>
+          <li><span>标题去“亲”字修订版（11-07）</span><em>4 次转发</em></li>
+        </ol>
+        <p style="font-size:.84rem;color:var(--muted);margin-top:10px">统计口径为跨板块引用次数，同一账号重复引用只计一次；不含站外截图流转。</p>
+      </section>
+
+      <!-- 补充板块：可信度分层 -->
+      <section class="block" id="supply">
+        <div class="block-head">
+          <h2>可信度分层：四类信息的边界</h2>
+          <span class="hint">判断方法</span>
+        </div>
+        <span class="eyebrow">分层</span>
+        <div class="overview-grid">
+          <div class="ov-card">
+            <h3>可核对</h3>
+            <p>发布时间、账号改名日期、入口排序调整、评论数量。都能在页面直接看到，日期到分钟或到天。</p>
+          </div>
+          <div class="ov-card">
+            <h3>当事方回应</h3>
+            <p>“夜航船”的 62 字说明只承认搬运与改写。回应存在，但覆盖范围有限，不能当作内容属实的依据。</p>
+          </div>
+          <div class="ov-card">
+            <h3>仅存转述</h3>
+            <p>“亲姐姐”“会喷水”等描述只见于二手标题，原帖正文无对应句子，也没有独立来源可以比对。</p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <aside class="side-col">
+      <div class="side-static">
+        <div class="side-card">
+          <h2>栏目导航</h2>
+          <ul class="side-nav" id="sideNav">
+            <li><a href="/#overview">领域概览</a></li>
+            <li><a href="/#picks">精选推荐</a></li>
+            <li><a href="/#latest">最新更新</a></li>
+            <li><a href="/#channels">分类入口</a></li>
+            <li><a href="/#analysis">深度解析</a></li>
+            <li><a href="/#guide">体验指南</a></li>
+            <li><a href="/#faq">问答</a></li>
+            <li><a href="/#comments">用户评论</a></li>
+            <li><a href="/#news">相关资讯</a></li>
+            <li><a href="/#rank">本周榜单</a></li>
+          </ul>
+        </div>
+        <div class="side-card">
+          <h2>近期核对点</h2>
+          <ul class="side-list">
+            <li>11-07 标题去“亲”字<small>热门榜第 4 位</small></li>
+            <li>11-06 姐姐主题退一位<small>权重按 7 日新增计</small></li>
+            <li>11-04 62 字说明<small>“夜航船”主页</small></li>
+            <li>10-29 账号改名<small>可追加至 9-12</small></li>
+            <li>10-18 原帖 14 字<small>评论区早期 12 条</small></li>
+          </ul>
+        </div>
+        <div class="side-card">
+          <h2>检索提示</h2>
+          <p style="font-size:.84rem;color:var(--ink-2);margin:0">输入“姐姐主题”“夜航船”“标题考古”等具体词，能找到对应板块或记录条目。只输入空泛词语时结果会提示无匹配。</p>
+        </div>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <div class="brand">
+          <svg width="26" height="26" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+            <rect width="64" height="64" rx="14" fill="#e8b04b"/>
+            <path d="M13 45 L27 17 L36 33 L44 21 L53 45 Z" fill="#0e2233"/>
+          </svg>
+          <span>海角大神强上会喷水的亲姐姐</span>
+        </div>
+        <p class="pos">把一串标题拆成时间、账号、排序三件事，剩下的交给读者自己判断。</p>
+      </div>
+      <div class="footer-col">
+        <h3>栏目入口</h3>
+        <ul>
+          <li><a href="/#overview">领域概览</a></li>
+          <li><a href="/#latest">最新更新</a></li>
+          <li><a href="/#analysis">深度解析</a></li>
+          <li><a href="/#guide">体验指南</a></li>
+          <li><a href="/#faq">问答</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>频道入口</h3>
+        <ul>
+          <li><a href="/#channels">姐姐主题</a></li>
+          <li><a href="/#comments">账号沿革</a></li>
+          <li><a href="/#news">标题考古</a></li>
+          <li><a href="/#rank">本周榜单</a></li>
+          <li><a href="/#supply">可信度分层</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>页面内容为示例数据与公开页面记录的整理，条目名、账号名按垂类特征生成，不构成事实认定。</span>
+      <span>内容更新至 <time datetime="2026-11-07">2026-11-07</time> · 版权归原发布方所有</span>
+    </div>
+  </div>
+</footer>
+
+<button id="toTop" type="button" aria-label="回到顶部">顶部</button>
+
+<script>
+(function(){
+  "use strict";
+  var navToggle = document.getElementById('navToggle');
+  var mainNav = document.getElementById('mainNav');
+  var toTop = document.getElementById('toTop');
+  var searchInput = document.getElementById('siteSearch');
+  var searchBtn = document.getElementById('searchBtn');
+  var searchResult = document.getElementById('searchResult');
+  var sideLinks = Array.prototype.slice.call(document.querySelectorAll('#sideNav a'));
+
+  // 移动端菜单
+  if(navToggle && mainNav){
+    navToggle.addEventListener('click', function(){
+      var open = mainNav.classList.toggle('open');
+      navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    mainNav.addEventListener('click', function(e){
+      if(e.target.closest('a') && window.matchMedia('(max-width:720px)').matches){
+        mainNav.classList.remove('open');
+        navToggle.setAttribute('aria-expanded','false');
+      }
+    });
+    document.addEventListener('keydown', function(e){
+      if(e.key === 'Escape' && mainNav.classList.contains('open')){
+        mainNav.classList.remove('open');
+        navToggle.setAttribute('aria-expanded','false');
+        navToggle.focus();
+      }
+    });
+  }
+
+  // 本地查找
+  var sections = Array.prototype.slice.call(document.querySelectorAll('main section.block[id], main section.hero'));
+  function runSearch(){
+    var q = (searchInput.value || '').trim().toLowerCase();
+    if(!q){
+      searchResult.classList.remove('on');
+      searchResult.textContent = '';
+      return;
+    }
+    var hit = null;
+    for(var i=0;i<sections.length;i++){
+      var sec = sections[i];
+      var text = (sec.textContent || '').toLowerCase();
+      if(text.indexOf(q) !== -1){ hit = sec; break; }
+    }
+    searchResult.classList.add('on');
+    if(hit){
+      var id = hit.id || 'top';
+      searchResult.textContent = '已找到相关板块，点击“查找”再次定位';
+      hit.scrollIntoView({behavior:'smooth', block:'start'});
+      if(history.replaceState){ history.replaceState(null,'','#'+id); }
+    }else{
+      searchResult.textContent = '没有匹配的频道或条目，试试“姐姐主题”“账号沿革”等具体词';
+    }
+  }
+  if(searchBtn){ searchBtn.addEventListener('click', runSearch); }
+  if(searchInput){
+    searchInput.addEventListener('keydown', function(e){
+      if(e.key === 'Enter'){ e.preventDefault(); runSearch(); }
+    });
+    searchInput.addEventListener('input', function(){
+      if(!searchInput.value.trim()){ searchResult.classList.remove('on'); searchResult.textContent=''; }
+    });
+  }
+
+  // 回到顶部
+  function onScroll(){
+    var y = window.pageYOffset || document.documentElement.scrollTop;
+    if(y > 420){ toTop.classList.add('on'); } else { toTop.classList.remove('on'); }
+    // 侧栏高亮
+    var current = null;
+    sections.forEach(function(sec){
+      if(sec.id && sec.getBoundingClientRect().top <= 160){ current = sec.id; }
+    });
+    sideLinks.forEach(function(a){
+      var target = a.getAttribute('href').split('#')[1];
+      if(target === current){ a.classList.add('active'); } else { a.classList.remove('active'); }
+    });
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+  if(toTop){
+    toTop.addEventListener('click', function(){
+      window.scrollTo({top:0, behavior:'smooth'});
+    });
+  }
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"海角大神强上会喷水的亲姐姐",
+  "inLanguage":"zh-CN",
+  "description":"围绕匿名社区标题传播、账号改名记录与板块排序口径的观察页面。"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"标题里的“亲姐姐”最早出现在哪一天？",
+      "acceptedAnswer":{"@type":"Answer","text":"可查的最早记录是 2026-10-22 23:19 的一条转述帖，标题较 10-18 原帖多出 7 字。原帖正文没有亲属称谓。"}
+    },
+    {
+      "@type":"Question",
+      "name":"“夜航船”这个账号是什么时候改名的？",
+      "acceptedAnswer":{"@type":"Answer","text":"改名记录显示在 2026-10-29 10:27，改名前累计 41 条发帖。"}
+    },
+    {
+      "@type":"Question",
+      "name":"姐姐主题板块为什么在 11 月 6 日往后排了一位？",
+      "acceptedAnswer":{"@type":"Answer","text":"社区规则页给出的权重口径是 7 日新增帖子数，姐姐主题 18 条对图文鉴赏 22 条，排序与之吻合。"}
+    },
+    {
+      "@type":"Question",
+      "name":"标题描述的剧情有第三方材料吗？",
+      "acceptedAnswer":{"@type":"Answer","text":"目前没有。可核对的对象只有发布时间、账号改名、入口排序三组，剧情相关的表述停留在转述层。"}
+    },
+    {
+      "@type":"Question",
+      "name":"原帖后来被删了吗？",
+      "acceptedAnswer":{"@type":"Answer","text":"原帖编号仍能打开，正文与 10-18 截图一致，未出现修改痕迹。"}
+    }
+  ]
+}
+</script>
+</body>
+              </html>
