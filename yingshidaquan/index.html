@@ -1,0 +1,960 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>影视大全在线观看免费-片单检索与选片指南</title>
+<meta name="description" content="影视大全在线观看免费：整理2026年11月可检索的院线新片、经典剧集与纪录片片单，附清晰度、字幕、片长与观看入口说明，覆盖悬疑、科幻、家庭剧、动画等类型，并提供选集避坑与设备适配建议。">
+<meta name="keywords" content="影视大全在线观看免费">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23141620'/%3E%3Cpath d='M16 20h32v24H16z' fill='none' stroke='%23f2b544' stroke-width='3'/%3E%3Cpath d='M27 27l10 5-10 5z' fill='%23f2b544'/%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#10131b;
+  --bg-soft:#171b26;
+  --panel:#1c2130;
+  --panel-2:#232a3b;
+  --line:#2c3448;
+  --ink:#e8ecf4;
+  --ink-soft:#a7b0c2;
+  --ink-faint:#78839a;
+  --gold:#f2b544;
+  --gold-deep:#c98f1f;
+  --teal:#4ec9b0;
+  --rose:#e8707f;
+  --radius:14px;
+  --radius-sm:8px;
+  --shadow:0 10px 30px rgba(0,0,0,.35);
+  --gap:22px;
+  --sticky-h:104px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  font-size:16px;
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+h1,h2,h3,h4{margin:0;line-height:1.3;font-weight:700}
+p{margin:0 0 .9em}
+ul,ol{margin:0 0 .9em;padding-left:1.2em}
+li{margin-bottom:.35em}
+button{font:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:4px}
+[id]{scroll-margin-top:calc(var(--sticky-h) + 14px)}
+
+/* ---------- 吸顶 ---------- */
+.sticky-wrap{position:sticky;top:0;z-index:60}
+.notice{
+  background:linear-gradient(90deg,var(--gold-deep),var(--gold));
+  color:#1a1406;
+  font-size:13.5px;
+  font-weight:600;
+}
+.notice .in{max-width:1200px;margin:0 auto;padding:7px 18px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.notice .dot{width:7px;height:7px;border-radius:50%;background:#1a1406;flex:0 0 auto}
+.notice a{text-decoration:underline;text-underline-offset:2px}
+header.site{
+  background:rgba(16,19,27,.93);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.head-in{
+  max-width:1200px;margin:0 auto;padding:12px 18px;
+  display:flex;align-items:center;gap:18px;flex-wrap:wrap;
+}
+.brand{display:flex;align-items:center;gap:11px;flex:0 0 auto}
+.brand-mark{width:42px;height:42px;flex:0 0 auto}
+.brand-text{display:flex;flex-direction:column;line-height:1.15}
+.brand-name{font-size:18px;font-weight:800;letter-spacing:.5px}
+.brand-sub{font-size:11px;color:var(--ink-faint);letter-spacing:1.6px}
+nav.main-nav{flex:1 1 auto;display:flex;gap:4px;flex-wrap:wrap;justify-content:center}
+nav.main-nav a{
+  padding:6px 11px;border-radius:999px;font-size:14px;color:var(--ink-soft);
+  transition:background .18s,color .18s;
+}
+nav.main-nav a:hover{background:var(--panel-2);color:var(--ink)}
+.head-tools{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+.search-box{display:flex;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:4px 6px 4px 12px}
+.search-box input{
+  background:transparent;border:0;color:var(--ink);width:150px;font-size:14px;padding:4px 0;
+}
+.search-box input::placeholder{color:var(--ink-faint)}
+.search-box button{
+  background:var(--gold);color:#1a1406;border:0;border-radius:999px;
+  padding:5px 12px;font-size:13px;font-weight:700;
+}
+.menu-btn{
+  display:none;background:var(--panel);border:1px solid var(--line);color:var(--ink);
+  border-radius:var(--radius-sm);padding:8px 12px;font-size:14px;
+}
+.search-feedback{
+  max-width:1200px;margin:0 auto;padding:0 18px;
+  font-size:13.5px;color:var(--gold);
+}
+.search-feedback:empty{display:none}
+.search-feedback div{padding:6px 0}
+
+/* ---------- 布局 ---------- */
+.wrap{max-width:1200px;margin:0 auto;padding:0 18px}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:34px;align-items:start;padding-top:36px}
+main{min-width:0}
+aside.rail{position:sticky;top:calc(var(--sticky-h) + 16px)}
+@media (max-width:1000px){
+  .layout{grid-template-columns:1fr}
+  aside.rail{position:static;order:2}
+  main{order:1}
+}
+
+/* ---------- 首屏 ---------- */
+.hero{
+  position:relative;overflow:hidden;
+  background:
+    radial-gradient(900px 320px at 82% -10%,rgba(242,181,68,.14),transparent 60%),
+    radial-gradient(700px 300px at 6% 110%,rgba(78,201,176,.12),transparent 60%),
+    var(--bg-soft);
+  border-bottom:1px solid var(--line);
+}
+.hero-in{max-width:1200px;margin:0 auto;padding:52px 18px 44px;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:38px;align-items:center}
+.hero-tag{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:var(--gold);border:1px solid rgba(242,181,68,.4);border-radius:999px;padding:4px 13px;margin-bottom:16px}
+.hero h1{font-size:clamp(28px,4.4vw,44px);letter-spacing:.5px}
+.hero h1 em{font-style:normal;color:var(--gold);display:block;font-size:.56em;letter-spacing:2px;margin-top:10px;color:var(--ink-soft);font-weight:600}
+.hero-desc{margin-top:16px;font-size:16px;color:var(--ink-soft);max-width:56ch}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.btn{display:inline-block;padding:11px 22px;border-radius:999px;font-weight:700;font-size:15px;border:1px solid transparent;transition:transform .18s,background .18s}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:var(--gold);color:#1a1406}
+.btn-ghost{border-color:var(--line);color:var(--ink);background:var(--panel)}
+.hero-stats{display:flex;gap:26px;margin-top:28px;flex-wrap:wrap}
+.hero-stats div strong{display:block;font-size:24px;color:var(--gold);font-variant-numeric:tabular-nums}
+.hero-stats div span{font-size:12.5px;color:var(--ink-faint)}
+.hero-visual{position:relative;min-height:300px}
+.hero-visual svg{width:100%;height:auto}
+@media (max-width:860px){
+  .hero-in{grid-template-columns:1fr;padding-top:34px}
+  .hero-visual{min-height:0;max-width:420px}
+}
+
+/* ---------- 通用板块 ---------- */
+section.block{padding:38px 0 6px;border-top:1px solid var(--line);margin-top:34px}
+section.block:first-of-type{border-top:0;margin-top:0}
+.block-head{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:6px}
+.block-head h2{font-size:22px}
+.block-head .hint{font-size:13px;color:var(--ink-faint)}
+.lead{color:var(--ink-soft);font-size:15px;margin-bottom:20px;max-width:70ch}
+.eyebrow{font-size:12px;letter-spacing:2px;color:var(--gold);text-transform:uppercase;margin-bottom:6px}
+
+/* 卡片网格 */
+.grid{display:grid;gap:var(--gap)}
+.grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.grid-auto{grid-template-columns:repeat(auto-fill,minmax(230px,1fr))}
+@media (max-width:860px){.grid-3{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:600px){.grid-3,.grid-2,.grid-auto{grid-template-columns:1fr}}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;transition:transform .18s,border-color .18s}
+.card:hover{transform:translateY(-3px);border-color:#3d4763}
+.card .cover{aspect-ratio:16/9;overflow:hidden;background:#0d1017}
+.card .cover img{width:100%;height:100%;object-fit:cover}
+.card-body{padding:14px 15px 16px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card h3{font-size:16px}
+.card p{font-size:13.5px;color:var(--ink-soft);margin:0}
+.meta{display:flex;gap:10px;flex-wrap:wrap;font-size:12px;color:var(--ink-faint)}
+.chip{display:inline-block;font-size:11.5px;padding:2px 9px;border-radius:999px;background:var(--panel-2);border:1px solid var(--line);color:var(--ink-soft)}
+.chip.gold{color:var(--gold);border-color:rgba(242,181,68,.45);background:rgba(242,181,68,.08)}
+.chip.teal{color:var(--teal);border-color:rgba(78,201,176,.4);background:rgba(78,201,176,.08)}
+
+/* 紧凑列表 */
+.tight-list{list-style:none;padding:0;margin:0;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--panel)}
+.tight-list li{display:flex;gap:14px;align-items:baseline;padding:13px 16px;border-bottom:1px solid var(--line);font-size:14.5px}
+.tight-list li:last-child{border-bottom:0}
+.tight-list time{flex:0 0 82px;color:var(--ink-faint);font-size:13px;font-variant-numeric:tabular-nums}
+.tight-list .t{flex:1;min-width:0}
+.tight-list .t small{display:block;color:var(--ink-faint);font-size:12.5px}
+
+/* 分类索引 */
+.index-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(168px,1fr));gap:12px}
+.index-item{display:block;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-sm);padding:13px 14px;transition:border-color .18s,transform .18s}
+.index-item:hover{border-color:var(--gold-deep);transform:translateY(-2px)}
+.index-item strong{display:block;font-size:15px}
+.index-item span{font-size:12.5px;color:var(--ink-faint)}
+
+/* 深度解析 */
+.analysis{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:26px 26px 12px}
+.analysis h3{font-size:18px;margin:26px 0 10px;padding-left:12px;border-left:3px solid var(--gold)}
+.analysis h3:first-of-type{margin-top:6px}
+.analysis p{font-size:15px;color:var(--ink-soft)}
+.analysis strong{color:var(--ink)}
+.pull{display:flex;gap:14px;margin:20px 0;padding:16px 18px;background:var(--bg-soft);border-left:3px solid var(--teal);border-radius:0 var(--radius-sm) var(--radius-sm) 0}
+.pull p{margin:0;font-size:14.5px;color:var(--ink)}
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:16px 0}
+@media (max-width:600px){.compare{grid-template-columns:1fr}}
+.compare > div{background:var(--bg-soft);border:1px solid var(--line);border-radius:var(--radius-sm);padding:14px 16px}
+.compare h4{font-size:13.5px;color:var(--gold);margin-bottom:8px;letter-spacing:.5px}
+.compare ul{margin:0;padding-left:1.1em;font-size:13.5px;color:var(--ink-soft)}
+
+/* 步骤 */
+.steps{counter-reset:s;display:grid;gap:12px;margin:0;padding:0;list-style:none}
+.steps li{counter-increment:s;display:grid;grid-template-columns:38px 1fr;gap:14px;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-sm);padding:14px 16px}
+.steps li::before{content:counter(s,decimal-leading-zero);color:var(--gold);font-weight:800;font-size:15px;font-variant-numeric:tabular-nums}
+.steps strong{display:block;font-size:15px;margin-bottom:2px}
+.steps span{font-size:13.5px;color:var(--ink-soft)}
+
+/* FAQ */
+details.faq{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-sm);margin-bottom:10px;overflow:hidden}
+details.faq summary{
+  list-style:none;cursor:pointer;padding:14px 18px;font-size:15px;font-weight:600;
+  display:flex;justify-content:space-between;gap:12px;align-items:center;
+}
+details.faq summary::-webkit-details-marker{display:none}
+details.faq summary::after{content:"＋";color:var(--gold);font-weight:700;flex:0 0 auto}
+details.faq[open] summary::after{content:"－"}
+details.faq .ans{padding:0 18px 16px;font-size:14px;color:var(--ink-soft)}
+
+/* 评论 */
+.comments{display:grid;gap:14px}
+.comment{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-sm);padding:15px 17px}
+.comment header{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap;margin-bottom:6px}
+.comment header strong{font-size:14px}
+.comment header time{font-size:12px;color:var(--ink-faint)}
+.comment p{font-size:14px;color:var(--ink-soft);margin:0}
+.comment .tag{font-size:11.5px;color:var(--teal);border:1px solid rgba(78,201,176,.35);border-radius:999px;padding:1px 8px}
+
+/* 时间线 */
+.timeline{list-style:none;padding:0;margin:0;border-left:2px solid var(--line);margin-left:8px}
+.timeline li{position:relative;padding:0 0 20px 22px}
+.timeline li::before{content:"";position:absolute;left:-7px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--gold);border:3px solid var(--bg)}
+.timeline time{font-size:12.5px;color:var(--gold);display:block;margin-bottom:2px;font-variant-numeric:tabular-nums}
+.timeline strong{font-size:15px;display:block}
+.timeline span{font-size:13.5px;color:var(--ink-soft)}
+
+/* 标签索引 */
+.tags{display:flex;flex-wrap:wrap;gap:9px}
+.tags a{font-size:13.5px;padding:7px 14px;border-radius:999px;background:var(--panel);border:1px solid var(--line);color:var(--ink-soft);transition:color .18s,border-color .18s}
+.tags a:hover{color:var(--gold);border-color:var(--gold-deep)}
+
+/* 引语 */
+.quote{background:linear-gradient(135deg,var(--panel-2),var(--panel));border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px;position:relative}
+.quote::before{content:"”";position:absolute;top:-6px;right:18px;font-size:70px;color:rgba(242,181,68,.16);line-height:1}
+.quote p{font-size:15.5px;color:var(--ink);margin:0 0 10px}
+.quote footer{font-size:13px;color:var(--ink-faint)}
+
+/* 侧栏 */
+.rail-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:18px;margin-bottom:18px}
+.rail-card h2,.rail-card h3{font-size:15px;margin-bottom:12px}
+.rail-nav{list-style:none;padding:0;margin:0;display:grid;gap:2px}
+.rail-nav a{display:block;padding:7px 10px;border-radius:var(--radius-sm);font-size:13.5px;color:var(--ink-soft);border-left:2px solid transparent}
+.rail-nav a:hover{background:var(--panel-2);color:var(--ink)}
+.rail-nav a.active{background:var(--panel-2);color:var(--gold);border-left-color:var(--gold)}
+.rail-facts{list-style:none;padding:0;margin:0;font-size:13.5px;color:var(--ink-soft)}
+.rail-facts li{display:flex;justify-content:space-between;gap:10px;padding:7px 0;border-bottom:1px dashed var(--line)}
+.rail-facts li:last-child{border-bottom:0}
+.rail-facts b{color:var(--ink);font-variant-numeric:tabular-nums}
+
+/* 页脚 */
+footer.site{background:var(--bg-soft);border-top:1px solid var(--line);margin-top:52px;padding:40px 0 22px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:28px}
+@media (max-width:860px){.foot-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.foot-grid{grid-template-columns:1fr}}
+.foot-brand{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.foot-brand .brand-mark{width:34px;height:34px}
+.foot-brand strong{font-size:16px}
+footer.site p{font-size:13px;color:var(--ink-faint);margin:0 0 8px}
+footer.site h3{font-size:13.5px;color:var(--ink);margin:0 0 10px;letter-spacing:1px}
+footer.site ul{list-style:none;padding:0;margin:0;font-size:13px}
+footer.site li{margin-bottom:7px}
+footer.site a:hover{color:var(--gold)}
+.foot-bottom{border-top:1px solid var(--line);margin-top:28px;padding-top:16px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:12.5px;color:var(--ink-faint)}
+
+/* 回顶 */
+#backTop{
+  position:fixed;right:18px;bottom:22px;z-index:70;
+  background:var(--gold);color:#1a1406;border:0;border-radius:999px;
+  padding:10px 16px;font-weight:700;font-size:13.5px;box-shadow:var(--shadow);
+  opacity:0;pointer-events:none;transition:opacity .2s,transform .2s;
+}
+#backTop.show{opacity:1;pointer-events:auto}
+#backTop:hover{transform:translateY(-2px)}
+@media (max-width:520px){#backTop{bottom:14px;right:12px;padding:9px 13px}}
+
+/* 移动导航 */
+@media (max-width:900px){
+  .menu-btn{display:inline-block}
+  nav.main-nav{
+    display:none;width:100%;flex-direction:column;gap:2px;padding:8px 0 6px;
+  }
+  nav.main-nav.open{display:flex}
+  nav.main-nav a{padding:10px 12px;border-radius:var(--radius-sm)}
+  .search-box input{width:110px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+  .card:hover,.index-item:hover,.btn:hover{transform:none}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="sticky-wrap">
+  <div class="notice">
+    <div class="in">
+      <span class="dot" aria-hidden="true"></span>
+      <span>11月7日片库更新：新增《雾港来信》全8集、《长夜列车》导演剪辑版，修复3部影片字幕偏移问题</span>
+      <a href="/#latest">查看更新清单</a>
+    </div>
+  </div>
+  <header class="site">
+    <div class="head-in">
+      <a class="brand" href="/#top" aria-label="影视大全在线观看免费首页">
+        <svg class="brand-mark" viewBox="0 0 64 64" role="img" aria-label="胶片与播放三角组合标志">
+          <rect x="2" y="2" width="60" height="60" rx="14" fill="#1c2130" stroke="#3d4763"/>
+          <rect x="13" y="18" width="38" height="28" rx="4" fill="none" stroke="#f2b544" stroke-width="2.5"/>
+          <path d="M27 26l12 6-12 6z" fill="#f2b544"/>
+          <g fill="#4ec9b0">
+            <rect x="16" y="11" width="4" height="4" rx="1"/>
+            <rect x="24" y="11" width="4" height="4" rx="1"/>
+            <rect x="32" y="11" width="4" height="4" rx="1"/>
+            <rect x="40" y="11" width="4" height="4" rx="1"/>
+            <rect x="16" y="49" width="4" height="4" rx="1"/>
+            <rect x="24" y="49" width="4" height="4" rx="1"/>
+            <rect x="32" y="49" width="4" height="4" rx="1"/>
+            <rect x="40" y="49" width="4" height="4" rx="1"/>
+          </g>
+        </svg>
+        <span class="brand-text">
+          <span class="brand-name">影视大全在线观看免费</span>
+          <span class="brand-sub">片单检索 · 选片判断</span>
+        </span>
+      </a>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainNav">栏目菜单</button>
+      <nav class="main-nav" id="mainNav" aria-label="主题导航">
+        <a href="/#overview">领域概览</a>
+        <a href="/#picks">精选片单</a>
+        <a href="/#latest">最新更新</a>
+        <a href="/#channels">分类入口</a>
+        <a href="/#analysis">深度解析</a>
+        <a href="/#guide">体验指南</a>
+        <a href="/#faq">常见问题</a>
+      </nav>
+      <div class="head-tools">
+        <form class="search-box" id="searchForm" role="search" aria-label="站内片名检索">
+          <input id="searchInput" type="search" placeholder="搜片名 / 演员" autocomplete="off" aria-label="输入片名或演员名">
+          <button type="submit">查找</button>
+        </form>
+      </div>
+    </div>
+    <div class="search-feedback" id="searchFeedback" role="status" aria-live="polite"></div>
+  </header>
+</div>
+
+<main id="top">
+
+  <div class="hero">
+    <div class="hero-in">
+      <div>
+        <span class="hero-tag">2026年11月片库状态 · 可检索条目 12,480</span>
+        <h1>影视大全在线观看免费<em>先看片单，再决定点开哪一部</em></h1>
+        <p class="hero-desc">把院线新片、经典剧集、纪录片和动画按清晰度、字幕完整度、片长与更新节奏排开。适合想在一堆片名里快速锁定一部、又不想被预告片误导的观众。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="/#picks">进入本周精选片单</a>
+          <a class="btn btn-ghost" href="/#channels">按类型找片</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>12,480</strong><span>可检索片名</span></div>
+          <div><strong>8</strong><span>主要类型频道</span></div>
+          <div><strong>96%</strong><span>条目含完整字幕标注</span></div>
+          <div><strong>11/07</strong><span>最近一次片库核对</span></div>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <svg viewBox="0 0 420 320" role="presentation">
+          <defs>
+            <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#2b3350"/><stop offset="1" stop-color="#171b26"/>
+            </linearGradient>
+            <linearGradient id="g2" x1="0" y1="1" x2="1" y2="0">
+              <stop offset="0" stop-color="#f2b544"/><stop offset="1" stop-color="#e8707f"/>
+            </linearGradient>
+          </defs>
+          <rect x="12" y="20" width="330" height="196" rx="14" fill="url(#g1)" stroke="#3d4763"/>
+          <rect x="34" y="44" width="128" height="76" rx="8" fill="#1c2130" stroke="#4ec9b0" opacity=".8"/>
+          <path d="M84 70l26 12-26 12z" fill="#4ec9b0"/>
+          <rect x="176" y="44" width="140" height="10" rx="5" fill="#3d4763"/>
+          <rect x="176" y="64" width="112" height="10" rx="5" fill="#2c3448"/>
+          <rect x="176" y="84" width="128" height="10" rx="5" fill="#2c3448"/>
+          <rect x="34" y="136" width="282" height="12" rx="6" fill="#2c3448"/>
+          <rect x="34" y="158" width="200" height="12" rx="6" fill="#2c3448"/>
+          <rect x="34" y="184" width="96" height="18" rx="9" fill="url(#g2)"/>
+          <rect x="300" y="176" width="108" height="70" rx="10" fill="#1c2130" stroke="#3d4763"/>
+          <circle cx="330" cy="206" r="12" fill="none" stroke="#f2b544" stroke-width="2"/>
+          <path d="M330 198v8l6 4" stroke="#f2b544" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <rect x="350" y="198" width="44" height="7" rx="3.5" fill="#3d4763"/>
+          <rect x="350" y="212" width="30" height="7" rx="3.5" fill="#2c3448"/>
+          <rect x="350" y="226" width="38" height="7" rx="3.5" fill="#2c3448"/>
+          <g stroke="#f2b544" stroke-width="2" opacity=".7">
+            <path d="M40 262h64"/><path d="M120 262h40"/><path d="M176 262h96"/>
+          </g>
+          <circle cx="300" cy="262" r="5" fill="#4ec9b0"/>
+          <circle cx="322" cy="262" r="5" fill="#e8707f"/>
+          <circle cx="344" cy="262" r="5" fill="#f2b544"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap layout">
+    <div>
+
+      <section class="block" id="overview">
+        <div class="eyebrow">领域概览</div>
+        <div class="block-head"><h2>片库构成与检索方式：先弄清楚有什么，再谈看什么</h2></div>
+        <p class="lead">截至11月7日，片库按“院线电影—剧集—纪录片—动画—短片”五类归档，每条记录至少标注片长、年份、语言、字幕状态四项。观众最常卡住的不是找不到片，而是片名相近、年份混淆、导演剪辑版与公映版混在一起。</p>
+        <div class="grid grid-3">
+          <article class="card">
+            <div class="card-body">
+              <span class="chip gold">电影</span>
+              <h3>院线新片与旧作重映</h3>
+              <p>收录2024至2026年公映作品6,120条，含《雾港》《长夜列车》等片名相近但导演不同的两组条目，检索时按导演与年份二次筛选。</p>
+              <div class="meta"><span>6,120 条</span><span>含导演剪辑版 214 条</span></div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body">
+              <span class="chip teal">剧集</span>
+              <h3>国产剧、英剧与韩剧分卷</h3>
+              <p>剧集按季与集拆分，单集片长与更新节奏单独字段。家庭剧《四点半的厨房》第二季11月3日完结，共12集，每集46分钟。</p>
+              <div class="meta"><span>3,860 条</span><span>完结率 88%</span></div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body">
+              <span class="chip">纪实与动画</span>
+              <h3>纪录片、动画长片与短片集</h3>
+              <p>纪录片2,010条，动画1,480条，短片集按策展主题聚类。自然类纪录片多标注拍摄地与拍摄年份，历史类标注史料来源。</p>
+              <div class="meta"><span>3,490 条</span><span>含策展合集 96 组</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="block" id="picks">
+        <div class="eyebrow">精选内容推荐</div>
+        <div class="block-head"><h2>本周精选片单：五部不同用途的片子</h2><span class="hint">编辑筛片逻辑见深度解析</span></div>
+        <p class="lead">挑选标准只有三条：字幕完整、片长与场景匹配、口碑分歧点明确。以下五部覆盖周末长途、睡前短看、陪家人观看三种不同场景。</p>
+        <div class="grid grid-2">
+          <article class="card">
+            <div class="cover"><img src="https://picsum.photos/seed/foggport-letter/640/360" width="640" height="360" loading="lazy" alt="《雾港来信》海报：夜雾中的港口灯塔与信箱"></div>
+            <div class="card-body">
+              <span class="chip gold">悬疑剧 · 全8集</span>
+              <h3>雾港来信</h3>
+              <p>11月7日上线，单集52分钟。前四集埋线索，第五集起回收。豆瓣短评中“结尾仓促”与“细节密”两种评价并存，适合一次性看完。</p>
+              <div class="meta"><span>2026</span><span>国语 / 中文字幕</span><span>总片长 416 分钟</span></div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="cover"><img src="https://picsum.photos/seed/night-train-dc/640/360" width="640" height="360" loading="lazy" alt="《长夜列车》导演剪辑版画面：车厢走廊与窗外暗色原野"></div>
+            <div class="card-body">
+              <span class="chip gold">剧情片 · 导演剪辑版</span>
+              <h3>长夜列车（导演剪辑版）</h3>
+              <p>比公映版多18分钟，主要补在列车过隧道一段。公映版被诟病的“动机断裂”在剪辑版里有三场对话作了说明，但节奏更慢。</p>
+              <div class="meta"><span>2026</span><span>片长 154 分钟</span><span>中英双字</span></div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="cover"><img src="https://picsum.photos/seed/kitchen-430/640/360" width="640" height="360" loading="lazy" alt="《四点半的厨房》剧照：傍晚厨房台面上的汤锅与窗光"></div>
+            <div class="card-body">
+              <span class="chip teal">家庭剧 · 已完结</span>
+              <h3>四点半的厨房 第二季</h3>
+              <p>12集，每集46分钟。第二季把叙事重心从母女移到三代同堂的一顿饭，第9集“剩菜”单集被反复讨论。适合与长辈同看。</p>
+              <div class="meta"><span>2026-11-03 完结</span><span>国语 / 中文字幕</span><span>总片长 552 分钟</span></div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="cover"><img src="https://picsum.photos/seed/coast-doc-96/640/360" width="640" height="360" loading="lazy" alt="纪录片《海岸线的第九十六天》画面：退潮后的礁石与测量标尺"></div>
+            <div class="card-body">
+              <span class="chip">纪录片 · 自然</span>
+              <h3>海岸线的第九十六天</h3>
+              <p>摄制组在闽东海岸驻留96天，记录潮间带生物与渔村作息。全片78分钟，无解说，靠现场声与字幕卡推进，适合安静观看。</p>
+              <div class="meta"><span>2026</span><span>片长 78 分钟</span><span>中文字幕卡</span></div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="cover"><img src="https://picsum.photos/seed/paper-crane-anim/640/360" width="640" height="360" loading="lazy" alt="动画短片集《纸鹤与铁皮鼓》画面：折纸鹤停在旧鼓面上"></div>
+            <div class="card-body">
+              <span class="chip">动画 · 短片集</span>
+              <h3>纸鹤与铁皮鼓</h3>
+              <p>6支短片，总长64分钟，每支10分钟左右。第3支《铁皮鼓不说话》用无对白方式讲搬家，适合碎片时间分次看。</p>
+              <div class="meta"><span>2026</span><span>总片长 64 分钟</span><span>无对白 / 中文字幕卡</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="block" id="latest">
+        <div class="eyebrow">最新更新</div>
+        <div class="block-head"><h2>11月1日至11月7日片库更新记录</h2><span class="hint">按核对时间倒序</span></div>
+        <ul class="tight-list">
+          <li><time>11月7日</time><span class="t">《雾港来信》全8集上线<small>字幕校对完成，第6集片尾字幕时长修正</small></span><span class="chip gold">剧集</span></li>
+          <li><time>11月7日</time><span class="t">《长夜列车》导演剪辑版补入<small>与公映版并列两条目，避免混淆</small></span><span class="chip gold">电影</span></li>
+          <li><time>11月6日</time><span class="t">3部影片字幕偏移修复<small>涉及《深水区》《第二个夏天》《旧城钟声》</small></span><span class="chip">修复</span></li>
+          <li><time>11月5日</time><span class="t">纪录片《海岸线的第九十六天》上线<small>附拍摄地坐标与潮汐表说明</small></span><span class="chip teal">纪实</span></li>
+          <li><time>11月4日</time><span class="t">2024年最佳外语片专题撤下<small>内容并入“经典重看”频道</small></span><span class="chip">归档</span></li>
+          <li><time>11月3日</time><span class="t">《四点半的厨房》第二季完结<small>第12集加更，总条目转“已完结”状态</small></span><span class="chip teal">剧集</span></li>
+          <li><time>11月2日</time><span class="t">动画短片集《纸鹤与铁皮鼓》入库<small>6支短片可单独播放</small></span><span class="chip">动画</span></li>
+          <li><time>11月1日</time><span class="t">搜索支持演员名与导演名<small>结果按年份分组</small></span><span class="chip">功能</span></li>
+        </ul>
+      </section>
+
+      <section class="block" id="channels">
+        <div class="eyebrow">分类入口</div>
+        <div class="block-head"><h2>按类型进频道</h2><span class="hint">每个频道标注条目数与更新频率</span></div>
+        <div class="index-grid">
+          <a class="index-item" href="/#picks"><strong>悬疑推理剧</strong><span>862 条 · 每周更新</span></a>
+          <a class="index-item" href="/#picks"><strong>科幻与未来片</strong><span>540 条 · 双周更新</span></a>
+          <a class="index-item" href="/#picks"><strong>家庭伦理剧</strong><span>1,120 条 · 每日更新</span></a>
+          <a class="index-item" href="/#picks"><strong>自然纪录片</strong><span>640 条 · 每周更新</span></a>
+          <a class="index-item" href="/#picks"><strong>动画长片</strong><span>780 条 · 每周更新</span></a>
+          <a class="index-item" href="/#picks"><strong>经典黑白电影</strong><span>1,304 条 · 每月整理</span></a>
+          <a class="index-item" href="/#picks"><strong>犯罪与庭审片</strong><span>410 条 · 双周更新</span></a>
+          <a class="index-item" href="/#picks"><strong>公路片与旅行影像</strong><span>288 条 · 每周更新</span></a>
+          <a class="index-item" href="/#picks"><strong>历史纪录片</strong><span>520 条 · 每月整理</span></a>
+          <a class="index-item" href="/#picks"><strong>短片与策展合集</strong><span>196 组 · 每月更新</span></a>
+        </div>
+      </section>
+
+      <section class="block" id="analysis">
+        <div class="eyebrow">深度解析</div>
+        <div class="block-head"><h2>“免费可看”不等于“随时好看”：五个可核对的判断</h2></div>
+        <div class="analysis">
+          <h3>版本差异先于片名：同一片名可能对应三个不同片长</h3>
+          <p>以《长夜列车》为例，公映版136分钟，导演剪辑版154分钟，另有海外发行版141分钟。三个版本在列车过隧道一段的对话数量不同，公映版删掉了列车员与主角的两场交谈，导致后半段动机显得跳脱。判断方式很直接：看条目页标注的片长与版本名，再比对片尾字幕里的发行年份。片长差8分钟以上、且片名后带括号说明的，基本不是同一版本。</p>
+          <p>另一个可核对的例子是《深水区》。该片在11月6日修复字幕偏移时，片库同时标出了“院线版”和“流媒体版”，后者多出一段4分钟的水下镜头，但字幕卡位置整体后移，修复前观看会在第37分钟出现明显不同步。</p>
+
+          <h3>清晰度标注要和片源年代一起看</h3>
+          <p>片库里标注“1080P”的老片并不都等于修复版。1958年的《旧城钟声》标注1080P，实际是2K扫描后转码，颗粒感保留较多；同页另有一条“4K修复版”，片长多出2分钟，来自2025年的一次胶片重扫。可核对的做法是看条目里的“修复年份”字段：修复年份早于2020年的，多为电视播出版转制，画面裁切比例可能与原片不同。</p>
+          <div class="compare">
+            <div>
+              <h4>A 类：标注清晰但未修复</h4>
+              <ul>
+                <li>片长与原片一致</li>
+                <li>画面有胶片颗粒与边缘暗角</li>
+                <li>字幕为后加，位置靠下</li>
+              </ul>
+            </div>
+            <div>
+              <h4>B 类：4K 修复版</h4>
+              <ul>
+                <li>片长可能多1—3分钟</li>
+                <li>颗粒被压平，暗部细节增加</li>
+                <li>字幕卡重新排版，可读性更好</li>
+              </ul>
+            </div>
+          </div>
+
+          <h3>更新节奏写清楚，比“全集上线”更有用</h3>
+          <p>剧集频道里，《雾港来信》标注“全8集”，《四点半的厨房》第二季标注“每周三、周六各1集，11月3日完结”。两种标注对观众的意义完全不同：前者适合一次看完，后者在追更期间容易出现“看到第7集忘了第5集细节”的情况。片库把单集片长、更新时间、完结状态三项分开列，核对时看这三项即可。</p>
+          <p>11月3日《四点半的厨房》第12集上线后，条目从“连载中”改为“已完结”，同时总片长由原先的506分钟修正为552分钟，差的46分钟正是第12集时长。这类字段变动可以在更新记录里逐条对上。</p>
+
+          <h3>口碑分歧点应该被写进条目，而不是藏起来</h3>
+          <p>《雾港来信》上线当天，短评区最集中的两种意见是“前四集节奏慢”和“第五集反转扎实”。片库条目页把这两条并列放进“分歧提示”，并注明各自出现的时间点。观众据此可以判断自己能否接受前四集的铺垫长度。这个做法比笼统写“口碑两极”有用，因为分歧被落到了具体集数上。</p>
+          <div class="pull">
+            <p>可复核的取舍：如果只看一集就决定弃剧，《雾港来信》第1集只交代了失踪案背景，真正推动剧情的是第2集第18分钟的一通电话。条目页的“关键节点”字段写明了这一点。</p>
+          </div>
+
+          <h3>免费观看的前提是字幕与音轨完整，不是片头能播</h3>
+          <p>11月6日修复的三部影片里，《第二个夏天》的问题不是字幕缺失，而是字幕与音轨相差2.3秒，越到后半段越明显。判断字幕是否可用，可以看条目页的“字幕状态”字段：标注“已校对”的，误差在0.5秒内；标注“外挂”的，需要确认播放器是否加载成功。这三部片在修复后统一改为“已校对”。</p>
+          <p>另一个常被忽略的点是音轨数量。《旧城钟声》4K修复版提供国语与原始音轨两条，老片影迷通常在意的正是原始音轨里的环境声，而不是配音版。条目页把音轨列为独立字段，避免看完才发现只有配音。</p>
+        </div>
+      </section>
+
+      <section class="block" id="guide">
+        <div class="eyebrow">体验指南</div>
+        <div class="block-head"><h2>从检索到开看：四步走完</h2></div>
+        <ol class="steps">
+          <li><div><strong>先输片名，再补年份</strong><span>片名相近的条目在片库里并列展示。搜《雾港》会出现《雾港来信》与2019年的《雾港》，补年份可去掉一条。</span></div></li>
+          <li><div><strong>看四项字段：片长、版本、字幕、音轨</strong><span>四项都齐再点开。缺“字幕状态”的条目，通常意味着字幕还在校对，先放一放。</span></div></li>
+          <li><div><strong>按场景挑片长</strong><span>睡前一小时选60分钟以内的纪录片或短片集；周末整块时间再看154分钟的导演剪辑版。</span></div></li>
+          <li><div><strong>看完回到条目页看分歧提示</strong><span>分歧提示写的是具体集数与时间点，对照自己的观感，比看笼统评分更能判断下次选片方向。</span></div></li>
+        </ol>
+        <div class="grid grid-2" style="margin-top:22px">
+          <div class="quote">
+            <p>“把《长夜列车》两个版本连着看了一遍。公映版第78分钟那段直接跳到站台，剪辑版里补了列车员递水的一场，动机顺了，但也确实慢了。”</p>
+            <footer>— 观众「南站月台」 11月6日留言</footer>
+          </div>
+          <div class="quote">
+            <p>“《海岸线的第九十六天》没有解说，我一开始以为会困，结果潮汐表那段字幕卡讲得很清楚，78分钟一口气看完。”</p>
+            <footer>— 观众「退潮以后」 11月5日留言</footer>
+          </div>
+        </div>
+      </section>
+
+      <section class="block" id="faq">
+        <div class="eyebrow">常见问题</div>
+        <div class="block-head"><h2>选片与观看时最常问的八个问题</h2></div>
+        <details class="faq" open>
+          <summary>《雾港来信》和2019年的《雾港》是同一部吗？</summary>
+          <div class="ans">不是。2019年的《雾港》是95分钟的电影，导演林澈；2026年的《雾港来信》是8集剧集，单集52分钟。两部作品在片库里并列，检索时看年份与片长字段即可区分。剧情上也没有承接关系，只是故事都发生在港口。</div>
+        </details>
+        <details class="faq">
+          <summary>导演剪辑版比公映版多了什么？</summary>
+          <div class="ans">《长夜列车》剪辑版多18分钟，主要分布在三处：列车员与主角的两场对话（约9分钟）、隧道内的一段长镜头（约5分钟）、片尾站台停留（约4分钟）。公映版被讨论最多的动机问题，对应的是第一处补充内容。</div>
+        </details>
+        <details class="faq">
+          <summary>标注1080P的老片就是修复版吗？</summary>
+          <div class="ans">不一定。分辨率标注只说明当前播放规格，是否修复要看“修复年份”字段。《旧城钟声》有两条条目：一条1080P、修复年份空白，另一条标注4K修复、修复年份2025，两条片长差2分钟。想看清颗粒与暗部细节的，选后者。</div>
+        </details>
+        <details class="faq">
+          <summary>字幕偏移怎么提前发现？</summary>
+          <div class="ans">看“字幕状态”字段。标注“外挂”的条目，字幕与音轨的同步依赖加载，容易在长片后半段出现偏移；标注“已校对”的，误差在0.5秒内。11月6日修复的《第二个夏天》原偏移为2.3秒，修复后状态已改为“已校对”。</div>
+        </details>
+        <details class="faq">
+          <summary>《四点半的厨房》第二季适合陪长辈看吗？</summary>
+          <div class="ans">多数集数适合。12集里第9集《剩菜》和第11集《搬家》涉及老人独居与代际沟通，情绪偏沉，但表达克制。全剧无强冲突场面，单集46分钟，适合分次观看。第12集为结局，建议与第11集连着看。</div>
+        </details>
+        <details class="faq">
+          <summary>短片集可以只挑其中一支看吗？</summary>
+          <div class="ans">可以。《纸鹤与铁皮鼓》6支短片各自独立，片库为每支单独建了条目并标注片长。第3支《铁皮鼓不说话》10分钟、无对白，常被单独拿出来看。合集总长64分钟，分次看不会影响理解。</div>
+        </details>
+        <details class="faq">
+          <summary>没有中文字幕的纪录片怎么看？</summary>
+          <div class="ans">片库里自然类纪录片多数自带中文字幕卡，而不是逐句字幕。《海岸线的第九十六天》就是字幕卡形式，每段间隔约3至5分钟，内容为地点、时间与物种名。历史类纪录片则多为逐句字幕，条目页会写明“字幕卡”或“中文字幕”。</div>
+        </details>
+        <details class="faq">
+          <summary>片库更新记录里的“修复”具体改了什么？</summary>
+          <div class="ans">11月6日的修复涉及三项：字幕时间轴重新对齐、片尾字幕时长修正、部分条目音轨顺序调整。涉及《深水区》《第二个夏天》《旧城钟声》三部。修复后三部影片的字幕状态统一改为“已校对”，可在各自条目页核对修改日期。</div>
+        </details>
+      </section>
+
+      <section class="block" id="news">
+        <div class="eyebrow">相关资讯</div>
+        <div class="block-head"><h2>与片单相关的三条行业动向</h2></div>
+        <ul class="tight-list">
+          <li><time>11月7日</time><span class="t">《雾港来信》主创访谈提到第6集剪辑调整<small>原定第5集结尾的反转被后移一集，具体说法见访谈原文</small></span><span class="chip">剧集</span></li>
+          <li><time>11月5日</time><span class="t">闽东海岸拍摄地公开潮汐观测数据<small>与纪录片字幕卡中的潮汐表对应，可交叉核对</small></span><span class="chip teal">纪录片</span></li>
+          <li><time>11月2日</time><span class="t">某修复工作室公布2025年胶片扫描流程<small>涉及4K修复版的颗粒处理方式，属工作室自述，未经第三方验证</small></span><span class="chip">修复</span></li>
+        </ul>
+      </section>
+
+      <section class="block" id="comments">
+        <div class="eyebrow">用户评论</div>
+        <div class="block-head"><h2>观众留言：具体到集数与时间点的反馈</h2></div>
+        <div class="comments">
+          <article class="comment">
+            <header><strong>潮汐观察员</strong><time>11月7日 21:14</time><span class="tag">《海岸线的第九十六天》</span></header>
+            <p>第41分钟那段退潮镜头，标尺上的刻度能看清，字幕卡写的是“农历初八”，和片尾潮汐表对得上。这种细节愿意做，说明摄制组真在岸边待了96天。</p>
+          </article>
+          <article class="comment">
+            <header><strong>三号放映厅</strong><time>11月7日 18:02</time><span class="tag">《长夜列车》</span></header>
+            <p>剪辑版第78分钟补的那场递水戏，确实把动机补上了，但隧道长镜头5分钟我有点坐不住。公映版剪掉不是没道理，两个版本各有取舍。</p>
+          </article>
+          <article class="comment">
+            <header><strong>阿棠不追剧</strong><time>11月6日 23:40</time><span class="tag">《雾港来信》</span></header>
+            <p>前四集真的慢，第3集整整一集在查旧档案。第5集反转出来时我回头重看了第2集第18分钟那通电话，才发现线索早给了。能接受慢节奏的值得看。</p>
+          </article>
+          <article class="comment">
+            <header><strong>旧城钟声收藏者</strong><time>11月6日 15:27</time><span class="tag">《旧城钟声》</span></header>
+            <p>4K修复版的暗部确实好，钟楼夜戏能看清砖缝了。不过原始音轨里的风声被压了一点，我反而更喜欢1080P那条未修复版本的粗糙感。</p>
+          </article>
+          <article class="comment">
+            <header><strong>厨房小凳</strong><time>11月5日 20:11</time><span class="tag">《四点半的厨房》第二季</span></header>
+            <p>第9集《剩菜》拍得好，但我妈看到一半去厨房了，说太像自己家。第11集搬家那段我倒是觉得节奏赶，老人收拾东西的镜头不到两分钟就转了。</p>
+          </article>
+          <article class="comment">
+            <header><strong>字幕校对员老周</strong><time>11月5日 11:03</time><span class="tag">片库功能</span></header>
+            <p>字幕状态分“已校对”和“外挂”这个做法实用。以前看长片最怕看到第90分钟字幕突然慢半拍，现在点开前能先筛一遍。</p>
+          </article>
+          <article class="comment">
+            <header><strong>纸鹤折了三次</strong><time>11月4日 22:55</time><span class="tag">《纸鹤与铁皮鼓》</span></header>
+            <p>第3支《铁皮鼓不说话》十分钟，无对白，讲搬家。结尾纸鹤停在鼓面上那一下我看了两遍。合集里另外两支偏实验，挑着看也行。</p>
+          </article>
+          <article class="comment">
+            <header><strong>不吃预告片这套</strong><time>11月3日 09:32</time><span class="tag">选片方法</span></header>
+            <p>分歧提示写集数这个想法好，但有些条目还是只写“口碑两极”四个字，等于没说。希望以后所有剧集都标到具体集，不然还是得自己试错。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="block" id="ranking">
+        <div class="eyebrow">补充板块 · 时间线</div>
+        <div class="block-head"><h2>《雾港来信》从开拍到上线的关键节点</h2><span class="hint">时间线只收录可核对节点</span></div>
+        <ul class="timeline">
+          <li><time>2025年9月12日</time><strong>开机</strong><span>拍摄地选在闽东某港口，剧组公布首批场景照。</span></li>
+          <li><time>2026年1月30日</time><strong>杀青</strong><span>全剧8集素材完成，进入剪辑阶段。</span></li>
+          <li><time>2026年9月18日</time><strong>首支预告发布</strong><span>预告中出现的第2集电话场景，正片保留。</span></li>
+          <li><time>2026年11月7日</time><strong>全8集上线</strong><span>片库同步完成字幕校对，第6集片尾时长修正。</span></li>
+        </ul>
+      </section>
+
+      <section class="block" id="tags">
+        <div class="eyebrow">相关推荐</div>
+        <div class="block-head"><h2>按关键词继续找片</h2></div>
+        <div class="tags">
+          <a href="/#picks">悬疑推理剧推荐</a>
+          <a href="/#picks">导演剪辑版对比</a>
+          <a href="/#latest">最新上线的国产剧</a>
+          <a href="/#picks">自然纪录片片单</a>
+          <a href="/#picks">家庭伦理剧同看</a>
+          <a href="/#guide">无对白动画短片</a>
+          <a href="/#analysis">老片4K修复怎么看</a>
+          <a href="/#faq">字幕偏移怎么发现</a>
+          <a href="/#picks">公路片与旅行影像</a>
+          <a href="/#channels">经典黑白电影频道</a>
+          <a href="/#picks">犯罪庭审片合集</a>
+          <a href="/#guide">一小时内看完的片</a>
+        </div>
+      </section>
+
+    </div>
+
+    <aside class="rail" aria-label="侧栏信息与栏目导航">
+      <div class="rail-card">
+        <h2>栏目导航</h2>
+        <ul class="rail-nav" id="railNav">
+          <li><a href="/#overview">领域概览</a></li>
+          <li><a href="/#picks">精选内容推荐</a></li>
+          <li><a href="/#latest">最新更新</a></li>
+          <li><a href="/#channels">分类入口</a></li>
+          <li><a href="/#analysis">深度解析</a></li>
+          <li><a href="/#guide">体验指南</a></li>
+          <li><a href="/#faq">常见问题</a></li>
+          <li><a href="/#news">相关资讯</a></li>
+          <li><a href="/#comments">用户评论</a></li>
+          <li><a href="/#ranking">时间线</a></li>
+          <li><a href="/#tags">相关推荐</a></li>
+        </ul>
+      </div>
+      <div class="rail-card">
+        <h3>片库快照</h3>
+        <ul class="rail-facts">
+          <li><span>可检索片名</span><b>12,480</b></li>
+          <li><span>电影</span><b>6,120</b></li>
+          <li><span>剧集</span><b>3,860</b></li>
+          <li><span>纪录片</span><b>2,010</b></li>
+          <li><span>动画</span><b>1,480</b></li>
+          <li><span>字幕状态已校对</span><b>96%</b></li>
+          <li><span>最近核对</span><b>11月7日</b></li>
+        </ul>
+      </div>
+      <div class="rail-card">
+        <h3>本周入口</h3>
+        <div class="tags" style="gap:7px">
+          <a href="/#picks">雾港来信</a>
+          <a href="/#picks">长夜列车</a>
+          <a href="/#picks">四点半的厨房</a>
+          <a href="/#picks">海岸线96天</a>
+          <a href="/#ranking">拍摄时间线</a>
+        </div>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">
+          <svg class="brand-mark" viewBox="0 0 64 64" role="img" aria-label="胶片与播放三角组合标志">
+            <rect x="2" y="2" width="60" height="60" rx="14" fill="#1c2130" stroke="#3d4763"/>
+            <rect x="13" y="18" width="38" height="28" rx="4" fill="none" stroke="#f2b544" stroke-width="2.5"/>
+            <path d="M27 26l12 6-12 6z" fill="#f2b544"/>
+          </svg>
+          <strong>影视大全在线观看免费</strong>
+        </div>
+        <p>按片长、版本、字幕与音轨四项字段筛片，把能不能看、该看哪版先说清楚。页面内条目名、片长与更新日期均可逐项核对。</p>
+      </div>
+      <div>
+        <h3>找片入口</h3>
+        <ul>
+          <li><a href="/#picks">本周精选片单</a></li>
+          <li><a href="/#latest">11月更新记录</a></li>
+          <li><a href="/#channels">类型频道索引</a></li>
+          <li><a href="/#ranking">剧集拍摄时间线</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>判断方法</h3>
+        <ul>
+          <li><a href="/#analysis">版本差异怎么查</a></li>
+          <li><a href="/#faq">字幕偏移怎么提前发现</a></li>
+          <li><a href="/#guide">四步选片流程</a></li>
+          <li><a href="/#tags">相关关键词标签</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>读者互动</h3>
+        <ul>
+          <li><a href="/#comments">观众具体留言</a></li>
+          <li><a href="/#faq">常见问题解答</a></li>
+          <li><a href="/#news">行业动向三条</a></li>
+          <li><a href="/#top">回到页面顶部</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>条目、片长、更新日期均为示例数据，用于说明字段与检索方式；实际信息以各条目页面标注为准。</span>
+      <span>页面更新时间：2026年11月7日 · 对应正文「最新更新」板块</span>
+    </div>
+    <div class="foot-bottom" style="border-top:0;margin-top:6px;padding-top:0">
+      <span>© 2026 影视大全在线观看免费 · 片单检索与选片判断</span>
+      <span>沪ICP备示例号 · 内容示例，不构成观看授权说明</span>
+    </div>
+  </div>
+</footer>
+
+<button id="backTop" type="button" aria-label="回到页面顶部">回到顶部</button>
+
+<script>
+(function(){
+  var menuBtn=document.getElementById('menuBtn');
+  var nav=document.getElementById('mainNav');
+  if(menuBtn&&nav){
+    menuBtn.addEventListener('click',function(){
+      var open=nav.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded',open?'true':'false');
+    });
+    nav.addEventListener('click',function(e){
+      if(e.target.tagName==='A'&&window.matchMedia('(max-width:900px)').matches){
+        nav.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  var backTop=document.getElementById('backTop');
+  function onScroll(){
+    if(window.scrollY>520){backTop.classList.add('show');}
+    else{backTop.classList.remove('show');}
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});
+  onScroll();
+  backTop.addEventListener('click',function(){
+    window.scrollTo({top:0,behavior:'smooth'});
+  });
+
+  var railLinks=Array.prototype.slice.call(document.querySelectorAll('#railNav a'));
+  var targets=railLinks.map(function(a){
+    var id=a.getAttribute('href').replace('/#','');
+    return document.getElementById(id);
+  });
+  function highlight(){
+    var pos=window.scrollY+140;
+    var idx=-1;
+    for(var i=0;i<targets.length;i++){
+      if(targets[i]&&targets[i].offsetTop<=pos){idx=i;}
+    }
+    railLinks.forEach(function(a,i){a.classList.toggle('active',i===idx);});
+  }
+  window.addEventListener('scroll',highlight,{passive:true});
+  highlight();
+
+  var form=document.getElementById('searchForm');
+  var input=document.getElementById('searchInput');
+  var feedback=document.getElementById('searchFeedback');
+  var pool=[
+    '雾港来信 剧集 2026 全8集',
+    '长夜列车 导演剪辑版 154分钟',
+    '四点半的厨房 第二季 12集',
+    '海岸线的第九十六天 纪录片',
+    '纸鹤与铁皮鼓 动画短片集',
+    '深水区 字幕修复 11月6日',
+    '第二个夏天 字幕偏移修复',
+    '旧城钟声 4K修复版',
+    '雾港 2019 林澈 95分钟',
+    '悬疑推理剧频道',
+    '自然纪录片频道',
+    '家庭伦理剧频道',
+    '经典黑白电影频道',
+    '犯罪与庭审片频道',
+    '公路片与旅行影像频道',
+    '一小时内看完的片',
+    '导演剪辑版对比方法',
+    '字幕偏移怎么发现'
+  ];
+  if(form){
+    form.addEventListener('submit',function(e){
+      e.preventDefault();
+      var q=input.value.trim();
+      if(!q){
+        feedback.innerHTML='<div>输入片名、演员或类型词再查找，例如「雾港来信」「导演剪辑版」「纪录片」。</div>';
+        return;
+      }
+      var ql=q.toLowerCase();
+      var hits=pool.filter(function(item){return item.toLowerCase().indexOf(ql)>-1;});
+      if(hits.length===0){
+        feedback.innerHTML='<div>没有找到与「'+q.replace(/[<>&]/g,'')+'」匹配的条目。可换成更短的片名，或改用「类型词 + 年份」再试。</div>';
+      }else{
+        feedback.innerHTML='<div>找到 '+hits.length+' 条相关条目：'+hits.slice(0,5).join('；')+(hits.length>5?' 等。':'。')+' <a href="/#picks" style="color:inherit;text-decoration:underline">到精选片单查看</a></div>';
+      }
+    });
+  }
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"影视大全在线观看免费",
+  "inLanguage":"zh-CN",
+  "description":"整理2026年11月可检索的院线新片、剧集与纪录片片单，附清晰度、字幕、片长与版本差异说明。"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"《雾港来信》和2019年的《雾港》是同一部吗？",
+      "acceptedAnswer":{"@type":"Answer","text":"不是。2019年的《雾港》是95分钟电影，导演林澈；2026年的《雾港来信》是8集剧集，单集52分钟。片库中两条并列，按年份与片长字段区分。"}
+    },
+    {
+      "@type":"Question",
+      "name":"导演剪辑版比公映版多了什么？",
+      "acceptedAnswer":{"@type":"Answer","text":"《长夜列车》剪辑版多18分钟，主要在三处：列车员与主角的两场对话约9分钟、隧道内长镜头约5分钟、片尾站台停留约4分钟。公映版被讨论的动机问题对应第一处补充内容。"}
+    },
+    {
+      "@type":"Question",
+      "name":"标注1080P的老片就是修复版吗？",
+      "acceptedAnswer":{"@type":"Answer","text":"不一定。分辨率只说明播放规格，是否修复要看修复年份字段。《旧城钟声》1080P条目修复年份空白，4K修复版标注2025年，两条片长差2分钟。"}
+    },
+    {
+      "@type":"Question",
+      "name":"字幕偏移怎么提前发现？",
+      "acceptedAnswer":{"@type":"Answer","text":"看字幕状态字段。标注外挂的条目在长片后半段更易偏移，标注已校对的误差在0.5秒内。11月6日修复的《第二个夏天》原偏移为2.3秒，修复后已改为已校对。"}
+    },
+    {
+      "@type":"Question",
+      "name":"《四点半的厨房》第二季适合陪长辈看吗？",
+      "acceptedAnswer":{"@type":"Answer","text":"多数集数适合。12集中第9集《剩菜》和第11集《搬家》涉及老人独居与代际沟通，情绪偏沉但表达克制。全剧无强冲突场面，单集46分钟。"}
+    },
+    {
+      "@type":"Question",
+      "name":"短片集可以只挑其中一支看吗？",
+      "acceptedAnswer":{"@type":"Answer","text":"可以。《纸鹤与铁皮鼓》6支短片各自独立，每支单独建有条目并标注片长。第3支《铁皮鼓不说话》10分钟、无对白，常被单独观看。"}
+    },
+    {
+      "@type":"Question",
+      "name":"没有中文字幕的纪录片怎么看？",
+      "acceptedAnswer":{"@type":"Answer","text":"自然类纪录片多为字幕卡形式，每段间隔约3至5分钟，内容为地点、时间与物种名；历史类多为逐句字幕。条目页会写明字幕卡或中文字幕。"}
+    },
+    {
+      "@type":"Question",
+      "name":"片库更新记录里的修复具体改了什么？",
+      "acceptedAnswer":{"@type":"Answer","text":"11月6日的修复涉及字幕时间轴重新对齐、片尾字幕时长修正、部分条目音轨顺序调整，涉及《深水区》《第二个夏天》《旧城钟声》，修复后字幕状态统一改为已校对。"}
+    }
+  ]
+}
+</script>
+
+</body>
+  </html>
